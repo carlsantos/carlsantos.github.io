@@ -129,7 +129,7 @@ body { overflow-x: hidden; }
 .home-left .jumbotron {
   height: 100vh;
   background-color: #202020;
-  background: url('../content/img/carl-santos.JPG') no-repeat center;
+  background: url('../content/img/carl-santos.jpg') no-repeat center;
   background-size: 100% 100%;
 }
 
@@ -202,7 +202,7 @@ body { overflow-x: hidden; }
 .home-websites .jumbotron {
   height: 100vh;
   background-color: #202020;
-  background-image: url('../content/img/websites.jpg');
+  background-image: url('../content/img/websites.JPG');
   background-size: 100% 100%;
 }
 
