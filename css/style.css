@@ -1,0 +1,212 @@
+body { overflow-x: hidden; }
+
+.no-mbp {
+  margin: 0!important;
+  padding: 0!important;
+  border-radius: 0!important;
+}
+
+.nav-toggle {
+  position: fixed;
+  top: 4%;
+  left: 4%;
+  z-index: 2;
+  padding: 15px;
+  font-size: 40px;
+  color: #fff;
+}
+
+.nav-toggle:hover { cursor: pointer }
+
+.navbar {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  margin: 0!important;
+  border-radius: 0!important;
+  background-color: #202020;
+}
+
+.navbar ul {
+  margin-top: 150px;
+  padding: 5% 0 8%;
+  text-align: center;
+}
+
+.navbar ul li {
+  padding: 2% 5%;
+  display: inline;
+}
+
+.navbar ul li a {
+  font-family: Oswald, sans-serif;
+  font-size: 200%;
+  color: #fff;
+}
+
+.navbar ul li a:hover {
+  text-decoration: none;
+  color: #ff3635;
+}
+
+@media(max-height: 500px){
+  .navbar {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    overflow-y: scroll;
+    max-height: inherit;
+  }
+}
+
+@media(max-width: 768px){
+  .navbar {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    overflow-y: scroll;
+    max-height: inherit;
+  }
+  .navbar ul { margin-top: 100px }
+  .navbar ul li { display: block }
+  .navbar ul li a { font-size: 150%; }
+}
+
+.nav-bottom {
+  padding: 2% 0;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  font-size: 120%;
+  color: #fff;
+  animation-delay: .8s;
+}
+
+.nav-bottom a {
+  margin: 1%;
+  color: #fff;
+}
+
+.nav-bottom a:hover {
+  text-decoration: none;
+  color: #ff3635;
+}
+
+.home-link { animation-delay: .3s }
+
+.about-link { animation-delay: .6s }
+
+.works-link { animation-delay: .9s }
+
+.contact-link { animation-delay: 1.2s }
+
+.my-logo {
+  position: absolute;
+  right: 4%;
+  top: 4%;
+  width: 130px;
+  animation-delay: .2s;
+}
+
+@media(max-width: 768px){
+  .my-logo { width: 120px; }
+}
+
+@media(max-width: 600px){
+  .my-logo { top: 5%; }
+}
+
+@media(max-width: 500px){
+  .my-logo { width: 100px; }
+}
+
+.home-left .jumbotron {
+  height: 100vh;
+  background-color: #202020;
+  background: url('../content/img/carl-santos.jpg') no-repeat center;
+  background-size: 100% 100%;
+}
+
+
+.home-right h1,
+.home-websites h2 {
+  margin-top: 27.5%;
+  margin-left: 5%;
+  font-family: oswald, sans-serif;
+  font-weight: bolder;
+  animation-delay: .2s;
+}
+
+.home-right p,
+.home-websites p {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: lato, sans-serif;
+  font-weight: 300;
+  font-size: 130%;
+  animation-delay: .6s;
+}
+
+.home-right hr,
+.home-websites hr {
+  margin: 1% 5%;
+  width: 100px;
+  padding: .2%;
+  text-align: left;
+  color: #ff3635;
+  background-color: #ff3635;
+  border-color: #ff3635;
+  animation-delay: .4s;
+}
+
+.home-right .btn,
+.home-websites .btn {
+  margin: 1% 5% 25%;
+  font-family: lato, sans-serif;
+  font-weight: 300;
+  background-color: transparent;
+  border: 3px solid #000;
+  border-radius: 5px;
+  color: #000;
+  animation-delay: .8s;
+}
+
+@media(max-height: 450px) {
+  .home-right { height: 250px }
+  .home-left .jumbotron { height: 450px }
+  .home-right h1 { margin-top: 15% }
+  .home-right .btn { margin-bottom: 5% }
+}
+
+@media(max-width: 767px) {
+  .home-left .jumbotron { background-image: url('../content/img/carlsantos.JPG'); }
+}
+
+.home-right .btn:hover,
+.home-websites .btn:hover { color: #fff }
+
+.home-websites hr {
+  color: #ff3635;
+  background-color: #ff3635;
+  border-color: #ff3635;
+}
+
+.home-websites { height: 100vh }
+
+.home-websites .jumbotron {
+  height: 100vh;
+  background-color: #202020;
+  background-image: url('../content/img/websites.JPG');
+  background-size: 100% 100%;
+}
+
+@media(max-height: 450px) {
+  .home-websites .jumbotron { height: 450px }
+
+}
