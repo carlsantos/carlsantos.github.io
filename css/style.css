@@ -187,7 +187,7 @@ body { overflow-x: hidden; }
 }
 
 @media(max-width: 767px) {
-  .home-left .jumbotron { background-image: url('../content/img/carlsantos.JPG'); }
+  .home-left .jumbotron { background-image: url('../content/img/carlsantos.jpg'); }
 }
 
 .home-right .btn:hover,
@@ -215,7 +215,7 @@ body { overflow-x: hidden; }
 
 .photos-left .jumbotron {
   height: 100vh;
-  background: url('../content/img/repeating-patterns.JPG');
+  background: url('../content/img/repeating-patterns.jpg');
   background-size: 100% 100%;
 }
 

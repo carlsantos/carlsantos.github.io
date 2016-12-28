@@ -27,13 +27,13 @@ $(document).ready(function(){
 
   $('.home-websites .jumbotron').css('opacity', 0);
   $('.home-websites .jumbotron').waypoint(function() {
-      $('.home-websites .jumbotron').addClass('fadeInLeft');
+      $('.home-websites .jumbotron').addClass('fadeInRight');
   }, { offset: '60%' });
 
   $('.photos-left .jumbotron').css('opacity', 0);
   $('.photos-left .jumbotron').waypoint(function() {
-      $('.photos-left .jumbotron').addClass('fadeInRight');
-  }, { offset: '60%' });
+      $('.photos-left .jumbotron').addClass('fadeInLeft');
+  }, { offset: '100%' });
 
   $('.nav-toggle').click(function(){
     $('.navbar').toggle('bounce', 300);
