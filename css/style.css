@@ -128,13 +128,13 @@ body { overflow-x: hidden; }
 
 .home-left .jumbotron {
   height: 100vh;
-  background: url('../content/img/carl-santos.JPG') no-repeat center;
+  background: url('../content/img/carl-santos.jpg');
   background-size: 100% 100%;
 }
 
-
 .home-right h1,
-.home-websites h2 {
+.home-websites h2,
+.photos h2 {
   margin-top: 27.5%;
   margin-left: 5%;
   font-family: oswald, sans-serif;
@@ -143,7 +143,8 @@ body { overflow-x: hidden; }
 }
 
 .home-right p,
-.home-websites p {
+.home-websites p,
+.photos p {
   margin-left: 5%;
   margin-right: 5%;
   font-family: lato, sans-serif;
@@ -153,7 +154,8 @@ body { overflow-x: hidden; }
 }
 
 .home-right hr,
-.home-websites hr {
+.home-websites hr,
+.photos hr {
   margin: 1% 5%;
   width: 100px;
   padding: .2%;
@@ -165,7 +167,8 @@ body { overflow-x: hidden; }
 }
 
 .home-right .btn,
-.home-websites .btn {
+.home-websites .btn,
+.photos .btn {
   margin: 1% 5% 25%;
   font-family: lato, sans-serif;
   font-weight: 300;
@@ -177,8 +180,8 @@ body { overflow-x: hidden; }
 }
 
 @media(max-height: 450px) {
-  .home-right { height: 250px }
-  .home-left .jumbotron { height: 450px }
+  .home-left .jumbotron { height: 500px }
+  .home-right { height: auto }
   .home-right h1 { margin-top: 15% }
   .home-right .btn { margin-bottom: 5% }
 }
@@ -188,7 +191,8 @@ body { overflow-x: hidden; }
 }
 
 .home-right .btn:hover,
-.home-websites .btn:hover { color: #fff }
+.home-websites .btn:hover,
+.photos .btn:hover { color: #fff }
 
 .home-websites hr {
   color: #ff3635;
@@ -196,15 +200,35 @@ body { overflow-x: hidden; }
   border-color: #ff3635;
 }
 
-.home-websites { height: 100vh }
-
 .home-websites .jumbotron {
   height: 100vh;
-  background-image: url('../content/img/websites.JPG');
+  background-image: url('../content/img/websites.jpg');
   background-size: 100% 100%;
 }
 
 @media(max-height: 450px) {
-  .home-websites .jumbotron { height: 450px }
+  .home-websites .jumbotron { height: 500px }
+  .home-websites-left { height: auto }
+  .home-websites h2 { margin-top: 15% }
+  .home-websites .btn { margin-bottom: 5% }
+}
 
+.photos-left .jumbotron {
+  height: 100vh;
+  background: url('../content/img/repeating-patterns.JPG');
+  background-size: 100% 100%;
+}
+
+@media(max-height: 450px) {
+  .photos-left .jumbotron { height: 500px }
+  .photos-right { height: auto }
+  .photos h2 { margin-top: 15% }
+  .photos .btn { margin-bottom: 5% }
+}
+
+footer {
+  padding: 1%;
+  border-top: 1px solid #d3d3d3;
+  font-family: lato, sans-serif;
+  font-weight: 300;
 }
