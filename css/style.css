@@ -149,7 +149,7 @@ body { overflow-x: hidden; }
   margin-right: 5%;
   font-family: lato, sans-serif;
   font-weight: 300;
-  font-size: 130%;
+  font-size: 110%;
   animation-delay: .6s;
 }
 
@@ -194,12 +194,6 @@ body { overflow-x: hidden; }
 .home-websites .btn:hover,
 .photos .btn:hover { color: #fff }
 
-.home-websites hr {
-  color: #ff3635;
-  background-color: #ff3635;
-  border-color: #ff3635;
-}
-
 .home-websites .jumbotron {
   height: 100vh;
   background-image: url('../content/img/websites.jpg');
@@ -215,7 +209,7 @@ body { overflow-x: hidden; }
 
 .photos-left .jumbotron {
   height: 100vh;
-  background: url('../content/img/repeating-patterns.jpg');
+  background: url('../content/img/carlsantos-long-exposure.jpg');
   background-size: 100% 100%;
 }
 
