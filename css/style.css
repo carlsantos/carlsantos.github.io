@@ -181,7 +181,6 @@ body { overflow-x: hidden; }
 
 @media(max-height: 450px) {
   .home-left .jumbotron { height: 500px }
-  .home-right { height: auto }
   .home-right h1 { margin-top: 15% }
   .home-right .btn { margin-bottom: 5% }
 }
@@ -202,7 +201,6 @@ body { overflow-x: hidden; }
 
 @media(max-height: 450px) {
   .home-websites .jumbotron { height: 500px }
-  .home-websites-left { height: auto }
   .home-websites h2 { margin-top: 15% }
   .home-websites .btn { margin-bottom: 5% }
 }
@@ -218,6 +216,15 @@ body { overflow-x: hidden; }
   .photos-right { height: auto }
   .photos h2 { margin-top: 15% }
   .photos .btn { margin-bottom: 5% }
+}
+
+@media(max-width: 767px) {
+  .home-right h1,
+  .home-websites-left h2,
+  .photos-right h2 { margin-top: 15% }
+  .home-right .btn,
+  .home-websites-left .btn,
+  .photos-right .btn { margin-bottom: 5% }
 }
 
 footer {
