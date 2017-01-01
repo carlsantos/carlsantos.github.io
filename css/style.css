@@ -200,8 +200,6 @@ body {
   height: 100vh;
   background-image: url('../content/img/websites.jpg');
   background-size: 100% 100%;
-  overflow: hidden;
-  transition: 50s;
 }
 
 @media(max-height: 450px) {
@@ -214,8 +212,6 @@ body {
   height: 100vh;
   background: url('../content/img/carlsantos-burst-shot.jpg');
   background-size: 100% 100%;
-  overflow: hidden;
-  transition: 50s;
 }
 
 @media(max-height: 450px) {
