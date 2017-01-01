@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $('.home-websites .jumbotron , .photos-left .jumbotron').css("background-size", "120%");
   var color1 = "", color2 = "#fff";
   $(window).scroll(function() {
     if ($(document).scrollTop() > 100) {
@@ -12,7 +13,7 @@ $(document).ready(function(){
 
   /*    NAVBAR TOGGLE   */
   $('.nav-toggle').click(function(){
-    $('.navbar').toggle('puff', 300);
+    $('.navbar').toggle('puff', 500);
       $('.nav-toggle').toggleClass("glyphicon-remove", 300, "easeOutSine").toggleClass("glyphicon-menu-hamburger", 300, "easeOutSine");
     });
 
