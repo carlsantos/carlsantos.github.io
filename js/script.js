@@ -12,8 +12,8 @@ $(document).ready(function(){
 
   /*    NAVBAR TOGGLE   */
   $('.nav-toggle').click(function(){
-    $('.navbar').toggle('puff', 500);
-      $('.nav-toggle').toggleClass("glyphicon-remove animated fadeIn", 300, "easeOutSine").toggleClass("glyphicon-menu-hamburger", 300, "easeOutSine");
+    $('.navbar').toggle('puff', 300);
+      $('.nav-toggle').toggleClass("glyphicon-remove", 300, "easeOutSine").toggleClass("glyphicon-menu-hamburger", 300, "easeOutSine");
     });
 
   /*    NAVBAR    */
