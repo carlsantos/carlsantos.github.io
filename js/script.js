@@ -13,7 +13,7 @@ $(document).ready(function(){
   /*    NAVBAR TOGGLE   */
   $('.nav-toggle').click(function(){
     $('.navbar').toggle('puff', 500);
-      $('.nav-toggle').toggleClass("glyphicon-remove", 300, "easeOutSine").toggleClass("glyphicon-menu-hamburger", 300, "easeOutSine");
+      $('.nav-toggle').toggleClass("glyphicon-remove animated fadeInLeft", 300, "easeOutSine").toggleClass("glyphicon-menu-hamburger", 300, "easeOutSine");
     });
 
   /*    NAVBAR    */
