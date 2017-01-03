@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-  $('.home-websites .jumbotron ,.photos-left .jumbotron').css({"background-size" : "115% 115%"});
-
   var color1 = "", color2 = "#fff";
   $(window).scroll(function() {
     if ($(document).scrollTop() > 100) {
