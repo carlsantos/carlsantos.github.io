@@ -203,7 +203,7 @@ body {
 @media(max-height: 450px) {
   .home-websites .jumbotron { height: 500px }
   .home-websites h2 { margin-top: 15% }
-  .home-websites .btn { margin-bottom: 5% }
+  .home-websites .btn { margin-bottom: 10% }
 }
 
 .photos-left .jumbotron {
@@ -217,7 +217,7 @@ body {
   .photos-left .jumbotron { height: 500px }
   .photos-right { height: auto }
   .photos h2 { margin-top: 15% }
-  .photos .btn { margin-bottom: 5% }
+  .photos .btn { margin-bottom: 10% }
 }
 
 @media(max-width: 767px) {
@@ -226,7 +226,7 @@ body {
   .photos-right h2 { margin-top: 15% }
   .home-right .btn,
   .home-websites-left .btn,
-  .photos-right .btn { margin-bottom: 5% }
+  .photos-right .btn { margin-bottom: 10% }
 }
 
 footer {
