@@ -136,6 +136,19 @@ body {
   background-size: 100% 100%;
 }
 
+.home-left .jumbotron img {
+  margin-top: 27%;
+  width: 50%;
+  animation-delay: .4s;
+}
+
+.home-left .jumbotron h2 {
+  font-family: Oswald, sans-serif;
+  font-weight: bolder;
+  color: #fff;
+  animation-delay: .8s;
+}
+
 .home-right h1,
 .home-websites h2,
 .photos h2 {
