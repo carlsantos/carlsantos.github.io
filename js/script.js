@@ -61,6 +61,9 @@ $(document).ready(function(){
       $('.fa-twitter, .fa-facebook').css({"opacity" : "1"});
   });
 
+  $(window).load(function() {
+  		$(".se-pre-con").fadeOut("slow");;
+  	});
 
   /*   ANIMATE   */
   $('.home-right, .home-right h1, .home-right hr, .home-right p, .home-right .btn').css('opacity', 0);
