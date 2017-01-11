@@ -137,41 +137,46 @@ body {
 }
 
 .home-left .jumbotron img {
-  margin-top: 28%;
-  width: 50%;
+  position: relative;
+  top: 25%;
+  width: 60%;
   animation-delay: .4s;
 }
 
 .home-left .jumbotron h2 {
+  position: relative;
+  top: 25%;
   font-family: Oswald, sans-serif;
   font-weight: bolder;
   color: #fff;
   animation-delay: .8s;
 }
 
-.home-right h1,
-.home-websites h2,
+.home-right h2,
+.home-websites-left h2,
 .photos h2 {
   margin-top: 27.5%;
   margin-left: 5%;
   font-family: oswald, sans-serif;
   font-weight: bolder;
+  font-size: 300%;
   animation-delay: .2s;
 }
 
 .home-right p,
-.home-websites p,
+.home-websites-left p,
 .photos p {
   margin-left: 5%;
   margin-right: 5%;
   font-family: lato, sans-serif;
   font-weight: 300;
-  font-size: 110%;
+  font-size: 120%;
+  line-height: 170%;
   animation-delay: .6s;
 }
 
 .home-right hr,
-.home-websites hr,
+.home-websites-left hr,
 .photos hr {
   margin: 1% 5%;
   width: 100px;
@@ -184,7 +189,7 @@ body {
 }
 
 .home-right .btn,
-.home-websites .btn,
+.home-websites-left .btn,
 .photos .btn {
   margin: 1% 5% 25%;
   font-family: lato, sans-serif;
@@ -199,11 +204,11 @@ body {
 @media(max-height: 450px) {
   .home-left .jumbotron { height: 500px }
   .home-right h1 { margin-top: 15% }
-  .home-right .btn { margin-bottom: 10% }
+  .home-right .btn { margin-bottom: 15% }
 }
 
 .home-right .btn:hover,
-.home-websites .btn:hover,
+.home-websites-left .btn:hover,
 .photos .btn:hover { color: #fff }
 
 .home-websites .jumbotron {
@@ -214,9 +219,9 @@ body {
 }
 
 @media(max-height: 450px) {
-  .home-websites .jumbotron { height: 500px }
-  .home-websites h2 { margin-top: 15% }
-  .home-websites .btn { margin-bottom: 10% }
+  .home-websites-left .jumbotron { height: 500px }
+  .home-websites-left h2 { margin-top: 15% }
+  .home-websites-left .btn { margin-bottom: 15% }
 }
 
 .photos-left .jumbotron {
@@ -230,11 +235,11 @@ body {
   .photos-left .jumbotron { height: 500px }
   .photos-right { height: auto }
   .photos h2 { margin-top: 15% }
-  .photos .btn { margin-bottom: 10% }
+  .photos .btn { margin-bottom: 15% }
 }
 
 @media(max-width: 767px) {
-  .home-right h1,
+  .home-right h2,
   .home-websites-left h2,
   .photos-right h2 { margin-top: 15% }
   .home-right .btn,
