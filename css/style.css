@@ -219,7 +219,7 @@ body {
 }
 
 @media(max-height: 450px) {
-  .home-websites-left .jumbotron { height: 500px }
+  .home-websites .jumbotron { height: 500px }
   .home-websites-left h2 { margin-top: 15% }
   .home-websites-left .btn { margin-bottom: 15% }
 }
@@ -227,7 +227,7 @@ body {
 .photos-left .jumbotron {
   height: 100vh;
   background-color: #eee;
-  background: url('../content/img/carlsantos-burst-shot.jpg');
+  background: url('../content/img/newpoint-long-exposure.JPG');
   background-size: 100% 100%;
 }
 
