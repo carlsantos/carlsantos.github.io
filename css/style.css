@@ -137,15 +137,12 @@ body {
 }
 
 .home-left .jumbotron img {
-  position: relative;
-  top: 25%;
+  margin-top: 30%;
   width: 60%;
   animation-delay: .4s;
 }
 
 .home-left .jumbotron h2 {
-  position: relative;
-  top: 25%;
   font-family: Oswald, sans-serif;
   font-weight: bolder;
   color: #fff;
@@ -227,7 +224,7 @@ body {
 .photos-left .jumbotron {
   height: 100vh;
   background-color: #eee;
-  background: url('../content/img/newpoint-long-exposure.JPG');
+  background: url('../content/img/newpoint-long-exposure.jpg');
   background-size: 100% 100%;
 }
 
