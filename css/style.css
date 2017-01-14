@@ -132,14 +132,17 @@ body {
 .home-left .jumbotron {
   height: 100vh;
   background-color: #eee;
-  background: url('../content/img/laptop-photo.jpg') no-repeat left center;
-  background-size: 100% 100%;
+  background: url('../content/img/laptop-photo.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .home-left .jumbotron img {
-  margin-top: 30%;
+  margin-top: 28%;
   width: 60%;
-  animation-delay: .4s;
+  animation-delay: .6s;
 }
 
 .home-left .jumbotron h2 {
@@ -149,7 +152,7 @@ body {
   animation-delay: .8s;
 }
 
-.home-right h2,
+.home-right h1,
 .home-websites-left h2,
 .photos h2 {
   margin-top: 27.5%;
@@ -211,8 +214,11 @@ body {
 .home-websites .jumbotron {
   height: 100vh;
   background-color: #eee;
-  background-image: url('../content/img/websites.jpg');
-  background-size: 100% 100%;
+  background: url('../content/img/websites.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 @media(max-height: 450px) {
@@ -224,8 +230,11 @@ body {
 .photos-left .jumbotron {
   height: 100vh;
   background-color: #eee;
-  background: url('../content/img/newpoint-long-exposure.jpg');
-  background-size: 100% 100%;
+  background: url('../content/img/newpoint-long-exposure.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 @media(max-height: 450px) {
@@ -236,7 +245,7 @@ body {
 }
 
 @media(max-width: 767px) {
-  .home-right h2,
+  .home-right h1,
   .home-websites-left h2,
   .photos-right h2 { margin-top: 15% }
   .home-right .btn,
