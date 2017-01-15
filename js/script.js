@@ -63,6 +63,7 @@ $(document).ready(function(){
 
 
   /*   ANIMATE   */
+  /**       HOME          **/
   $('.home-right, .home-right h1, .home-right hr, .home-right p, .home-right .btn').css('opacity', 0);
   $('.home-right, .home-right h1, .home-right hr, .home-right p, .home-right .btn').waypoint(function() {
       $('.home-right, .home-right h1, .home-right hr, .home-right p, .home-right .btn').addClass('fadeIn');
@@ -92,6 +93,15 @@ $(document).ready(function(){
   $('.home-link, .about-link, .works-link, .contact-link').waypoint(function() {
       $('.home-link, .about-link, .works-link, .contact-link').addClass('fadeIn');
   }, { offset: '100%' });
+
+  /**       ABOUT       **/
+
+  $('.services h2, .services hr, .services-icons div').css('opacity', 0);
+  $('.services h2, .services hr, .services-icons div').waypoint(function() {
+      $('.services h2, .services hr, .services-icons div').addClass('fadeInUp');
+  }, { offset: '50%' });
+
+
 
 
 });
