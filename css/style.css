@@ -172,6 +172,7 @@ body {
   font-weight: 300;
   font-size: 120%;
   line-height: 170%;
+  color: #000;
   animation-delay: .6s;
 }
 
@@ -202,6 +203,7 @@ body {
 }
 
 @media(max-height: 450px) {
+  .home-left .jumbotron img { margin-top: 20% }
   .home-left .jumbotron { height: 500px }
   .home-right h1 { margin-top: 15% }
   .home-right .btn { margin-bottom: 15% }
@@ -252,6 +254,51 @@ body {
   .home-websites-left .btn,
   .photos-right .btn { margin-bottom: 10% }
 }
+
+/**********************************************
+                    ABOUT
+***********************************************/
+.red { color: #ff3635 }
+
+.about{
+  color: #fff;
+  background-color: #d3d3d3;
+  background: url('../content/img/carlsantos-long-exposure2.JPG') no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.about h1 {
+  margin-top: 13%;
+  font-family: Oswald, sans-serif;
+  animation-delay: .3s;
+}
+
+.about p {
+  width: 50%;
+  margin: 1% auto 12%;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+  font-size: 140%;
+  line-height: 175%;
+  animation-delay: .5s;
+}
+
+.about hr {
+  padding: .1%;
+  width: 100px;
+  margin: auto;
+  color: #ff3635;
+  background-color: #ff3635;
+  border-color: #ff3635;
+  animation-delay: .4s;
+}
+
+
+
+
 
 footer {
   padding: 1%;
