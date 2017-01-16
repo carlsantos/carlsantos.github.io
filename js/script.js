@@ -101,6 +101,11 @@ $(document).ready(function(){
       $('.services h2, .services hr, .services-icons div').addClass('fadeInUp');
   }, { offset: '50%' });
 
+  $('.skills h2, .skills hr, .skillset i, .skillset h4, .skillset2 i, .skillset2 h4').css('opacity', 0);
+  $('.skills h2, .skills hr, .skillset i, .skillset h4, .skillset2 i, .skillset2 h4').waypoint(function() {
+      $('.skills h2, .skills hr, .skillset i, .skillset h4, .skillset2 i, .skillset2 h4').addClass('fadeInUp');
+  }, { offset: '50%' });
+
 
 
 

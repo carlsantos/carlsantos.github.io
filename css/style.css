@@ -285,7 +285,8 @@ body {
 }
 
 .about hr,
-.services hr {
+.services hr,
+.skills hr {
   padding: .1%;
   width: 100px;
   margin: auto;
@@ -303,14 +304,14 @@ body {
   }
 }
 
-.services-icons { padding: 4% 0 6%;}
+.services-icons { padding: 4% 0 2% }
 
 .services-icons .fa { color: #202020 }
 
 .services h2,
-.services-icons h4 {
-  font-family: Oswald, sans-serif;
-}
+.skills h2,
+.skills h4,
+.services-icons h4 { font-family: Oswald, sans-serif }
 
 .services-icons p {
   font-family: Lato, sans-serif;
@@ -321,6 +322,66 @@ body {
 
 @media(max-width: 768px){
   .services h2 { margin-top: 450px }
+}
+
+.skills {
+  color: #fff;
+  background-color: #eee;
+  background: url('../content/img/carl-santos-angels2.jpg') no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.skills h2 { margin-top: 100px }
+
+.skills hr { margin-bottom: 60px }
+
+.skills h4 { line-height: 180% }
+
+.skill-one,
+.skill-two {
+  padding: 5%;
+  border-bottom: 1px solid #fff;
+}
+
+.skillset div,
+.skillset2 div { height: 250px }
+
+.skillset div:hover,
+.skillset2 div:hover {
+  cursor: grab;
+  background-color: #ff3635;
+  opacity: .8;
+}
+
+.skillset2 { margin-bottom: 80px }
+
+.skill-three,
+.skill-four {
+  padding: 5%;
+  border-top: 1px solid #fff;
+}
+
+.skill-one,
+.skill-three { border-right: 1px solid #fff }
+
+.skill-two,
+.skill-four { border-left: 1px solid #fff }
+
+@media(max-width: 786px){
+  .skillset div,
+  .skillset2 div {
+    height: 150px;
+    border: none;
+  }
+  .skill-one,
+  .skill-two,
+  .skill-three,
+  .skill-four {
+    padding: 5%;
+  }
 }
 /**********************
         FOOTER
