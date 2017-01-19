@@ -112,21 +112,21 @@ body {
 .my-logo {
   position: absolute;
   right: 4%;
-  top: 4%;
-  width: 130px;
+  top: 3%;
+  width: 150px;
   animation-delay: .2s;
 }
 
 @media(max-width: 768px){
-  .my-logo { width: 120px; }
+  .my-logo { width: 130px; }
 }
 
 @media(max-width: 600px){
-  .my-logo { top: 5%; }
+  .my-logo { top: 4%; }
 }
 
 @media(max-width: 500px){
-  .my-logo { width: 100px; }
+  .my-logo { width: 120px; }
 }
 
 .home-left .jumbotron {
@@ -140,7 +140,7 @@ body {
 }
 
 .home-left .jumbotron img {
-  margin-top: 28%;
+  margin-top: 20%;
   width: 60%;
   animation-delay: .6s;
 }
@@ -192,7 +192,7 @@ body {
 .home-right .btn,
 .home-websites-left .btn,
 .photos .btn {
-  margin: 1% 5% 25%;
+  margin: 1% 5% 1%;
   font-family: lato, sans-serif;
   font-weight: 300;
   background-color: transparent;
