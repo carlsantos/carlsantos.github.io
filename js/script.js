@@ -106,7 +106,20 @@ $(document).ready(function(){
       $('.skills h2, .skills hr, .skillset i, .skillset h4, .skillset2 i, .skillset2 h4').addClass('fadeInUp');
   }, { offset: '50%' });
 
+  $('.photography h2').css('opacity', 0);
+  $('.photography h2').waypoint(function() {
+      $('.photography h2').addClass('fadeInUp');
+  }, { offset: '50%' });
 
+  $('.photog1 img, .photog1 h4, .photog1 p').css('opacity', 0);
+  $('.photog1 img, .photog1 h4, .photog1 p').waypoint(function() {
+      $('.photog1 img, .photog1 h4, .photog1 p').addClass('fadeInLeft');
+  }, { offset: '50%' });
+
+  $('.photog2 img, .photog2 h4, .photog2 p').css('opacity', 0);
+  $('.photog2 img, .photog2 h4, .photog2 p').waypoint(function() {
+      $('.photog2 img, .photog2 h4, .photog2 p').addClass('fadeInRight');
+  }, { offset: '50%' });
 
 
 });

@@ -286,7 +286,8 @@ body {
 
 .about hr,
 .services hr,
-.skills hr {
+.skills hr,
+.photography hr {
   padding: .1%;
   width: 100px;
   margin: auto;
@@ -311,14 +312,22 @@ body {
 .services h2,
 .skills h2,
 .skills h4,
-.services-icons h4 { font-family: Oswald, sans-serif }
+.services-icons h4,
+.photography h2,
+.photography h4 { font-family: Oswald, sans-serif }
 
-.services-icons p {
+.services-icons p,
+.photography p {
   font-family: Lato, sans-serif;
   font-weight: 300;
   font-size: 120%;
   line-height: 180%;
 }
+
+
+.photography h2,
+.photography h4,
+.photography p { color: #fff }
 
 @media(max-width: 768px){
   .services h2 { margin-top: 450px }
@@ -383,9 +392,47 @@ body {
     padding: 5%;
   }
 }
+
+.photography {
+  background-color: #eee;
+  background: url('../content/img/carlsantos-burst-shot2.JPG') no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.photog1 img,
+.photog2 img {
+  margin: 30px 0 20px;
+}
+
+.photog1 h4,
+.photog2 h4 { animation-delay: .1s }
+.photog1 p,
+.photog2 p { animation-delay: .2s }
+
+.resume {
+  margin: 20px auto;
+  font-family: lato, sans-serif;
+  font-weight: 300;
+  background-color: transparent;
+  border: 3px solid #000;
+  border-radius: 5px;
+  color: #000;
+  animation-delay: .8s;
+}
+
+.resume:hover {
+  border: 3px solid #000;
+  color: #fff;
+}
+
 /**********************
         FOOTER
 **********************/
+.microdata { display: none; }
+
 footer {
   padding: 1%;
   border-top: 1px solid #d3d3d3;
