@@ -304,6 +304,12 @@ body {
   }
 }
 
+.services {
+  background: #fff url('../content/img/carl-santos-bnw-logo.png') no-repeat right;
+  background-size: contain;
+
+}
+
 .services-icons { padding: 4% 0 2% }
 
 .services-icons .fa { color: #202020 }
