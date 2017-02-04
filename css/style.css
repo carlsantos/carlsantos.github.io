@@ -131,8 +131,7 @@ body {
 
 .home-left .jumbotron {
   height: 100vh;
-  background-color: #eee;
-  background: url('../content/img/laptop-photo.jpg') no-repeat center center;
+  background: #d3d3d3 url('../content/img/laptop-photo.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -215,8 +214,7 @@ body {
 
 .home-websites .jumbotron {
   height: 100vh;
-  background-color: #eee;
-  background: url('../content/img/websites.jpg') no-repeat center center;
+  background: #d3d3d3 url('../content/img/websites.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -229,10 +227,10 @@ body {
   .home-websites-left .btn { margin-bottom: 15% }
 }
 
+
 .photos-left .jumbotron {
   height: 100vh;
-  background-color: #eee;
-  background: url('../content/img/newpoint-long-exposure.jpg') no-repeat center center;
+  background: #d3d3d3 url('../content/img/newpoint-long-exposure.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -262,8 +260,7 @@ body {
 
 .about{
   color: #fff;
-  background-color: #d3d3d3;
-  background: url('../content/img/carlsantos-long-exposure2.jpg') no-repeat center fixed;
+  background: #d3d3d3 url('../content/img/carlsantos-long-exposure2.jpg') no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
