@@ -260,21 +260,22 @@ body {
 
 .about{
   color: #fff;
-  background: #d3d3d3 url('../content/img/carlsantos-long-exposure2.jpg') no-repeat center fixed;
+  background: #d3d3d3 url('../content/img/carlsantos-long-exposure2.jpg') no-repeat top fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  transition: all 0.1s ease
 }
 
 .about h1 {
-  margin-top: 13%;
+  margin-top: 210px;
   font-family: Oswald, sans-serif;
 }
 
 .about p {
   width: 50%;
-  margin: 1% auto 12%;
+  margin: 1% auto 250px;
   font-family: Lato, sans-serif;
   font-weight: 300;
   font-size: 140%;
@@ -337,6 +338,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  transition: all 0.1s ease
 }
 
 .photog1,

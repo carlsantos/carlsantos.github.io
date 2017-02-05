@@ -1,0 +1,19 @@
+# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+RewriteBase /
+
+<IfModule mod_expires.c>
+    ExpiresActive on
+
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+</IfModule>
+
+RewriteCond %{HTTP_HOST} ^www\.carljosephsantos\.com$
+RewriteRule ^/?$ "http\:\/\/carljosephsantos\.com\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} !^www.carljosephsantos.com$ [NC]
+RewriteRule ^(.*)$ http://www.carljosephsantos.com/$1 [L,R=301]
+
+RewriteCond %{HTTP_USER_AGENT} libwww-perl.*
+RewriteRule .* ? [F,L]
