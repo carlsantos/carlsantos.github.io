@@ -121,8 +121,4 @@ $(document).ready(function(){
       $('.photog2 img, .photog2 h4, .photog2 p').addClass('fadeInRight');
   }, { offset: '50%' });
 
-  $(document).on('scroll', function(){
-    var curScrollPos = $(document).scrollTop();
-    $('.about, .photography').css('background-position', '0' + -curScrollPos/4 + 'px');
-  });
 });

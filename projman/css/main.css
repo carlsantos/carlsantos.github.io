@@ -1,0 +1,341 @@
+.no-mbp {
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important; }
+
+body {
+  overflow-x: hidden; }
+
+.navbar {
+  background: transparent;
+  border-bottom: none;
+  padding: 4% 3%;
+  transition: 0.5s; }
+  .navbar .navbar-nav li a {
+    font-size: 120%;
+    font-family: "Open sans", sans-serif;
+    color: #fff;
+    background: transparent !important;
+    transition: 0.5s; }
+  .navbar .navbar-header a {
+    position: fixed;
+    top: 2%;
+    width: 100px;
+    font-family: Oswald, Arial, san-serif;
+    transition: 0.5s; }
+  @media (max-width: 771px) {
+    .navbar .navbar-header a {
+      width: 80px; } }
+  @media (max-width: 670px) {
+    .navbar .navbar-header a {
+      top: 1%;
+      width: 80px; } }
+  @media (max-width: 571px) {
+    .navbar .navbar-header a {
+      width: 70px; } }
+  .navbar .navbar-nav .active a,
+  .navbar .navbar-nav .active a:hover,
+  .navbar .navbar-nav .active a:focus {
+    color: #9d93ff;
+    background-color: transparent !important; }
+  .navbar .navbar-toggle {
+    border: none;
+    background: #fff; }
+  @media (max-width: 768px) {
+    .navbar .navbar-nav {
+      background-color: #fff;
+      color: #202020; }
+    .navbar .navbar-nav li a {
+      color: #202020; } }
+
+.navbar2 {
+  background: #fff;
+  border-bottom: 1px solid #d3d3d3;
+  padding: 0 !important;
+  box-shadow: 0 0 10px #eee;
+  transition: 0.5s; }
+  .navbar2 .navbar-nav li a {
+    font-size: 100%;
+    font-family: "Open Sans";
+    color: #202020;
+    background: transparent !important;
+    transition: 0.5s; }
+  .navbar2 .navbar-header a {
+    position: fixed;
+    top: -10px;
+    width: 70px;
+    font-family: Oswald, Arial, san-serif;
+    transition: 0.5s; }
+  .navbar2 .navbar-nav .active a,
+  .navbar2 .navbar-nav .active a:hover,
+  .navbar2 .navbar-nav .active a:focus {
+    color: #fff;
+    background-color: #9d93ff !important; }
+  .navbar2 .navbar-toggle {
+    border: none;
+    background: transparent !important; }
+
+.header {
+  height: 100vh;
+  background: #F8F8F8 url("../content/img/phcapampanga-header.jpg") no-repeat center fixed;
+  background-size: cover; }
+  .header h1 {
+    position: absolute;
+    right: 30px;
+    bottom: 150px;
+    width: 50%;
+    color: #fff;
+    font-family: Oswald, Arial, san-serif;
+    font-weight: bolder;
+    font-size: 200%; }
+  .header p {
+    position: absolute;
+    right: 10px;
+    bottom: 100px;
+    width: 50%;
+    color: #fff;
+    font-family: Lato, Calibri, sans-serif;
+    font-size: 120%;
+    animation-delay: .8s; }
+  @media (max-height: 500px) {
+    .header {
+      height: 500px; } }
+  @media (max-width: 851px) {
+    .header p {
+      bottom: 65px; } }
+  @media (max-width: 591px) {
+    .header p {
+      bottom: 40px; } }
+  @media (max-width: 446px) {
+    .header p {
+      bottom: 20px; } }
+  @media (max-width: 381px) {
+    .header p {
+      width: 70%;
+      bottom: 30px; }
+    .header h1 {
+      width: 70%; } }
+  @media (max-width: 300px) {
+    .header p {
+      bottom: 10px; } }
+
+.about h2 {
+  margin-top: 150px;
+  font-family: Oswald, Arial, san-serif;
+  font-weight: bolder;
+  color: #9d93ff; }
+
+.about p {
+  width: 50%;
+  margin: 0 auto 150px;
+  line-height: 170%;
+  font-family: Lato, Calibri, sans-serif;
+  font-size: 130%; }
+
+@media (max-width: 768px) {
+  .about p {
+    width: 80%; } }
+
+.pic-slider .carousel {
+  height: 450px; }
+  .pic-slider .carousel .stud1 {
+    height: 450px;
+    background: #202020 url("../content/img/phcapampanga-students.jpg") no-repeat center center;
+    background-size: cover; }
+  .pic-slider .carousel .stud2 {
+    height: 450px;
+    background: #202020 url("../content/img/phcapampanga-students2.jpg") no-repeat center center;
+    background-size: cover; }
+  .pic-slider .carousel .stud3 {
+    height: 450px;
+    background: #202020 url("../content/img/phcapampanga-students3.jpg") no-repeat center center;
+    background-size: cover; }
+  .pic-slider .carousel .stud4 {
+    height: 450px;
+    background: #202020 url("../content/img/phcapampanga-students4.jpg") no-repeat center center;
+    background-size: cover; }
+  .pic-slider .carousel .carousel-control {
+    display: none;
+    background-image: none !important;
+    filter: none !important; }
+  .pic-slider .carousel .glyphicon-menu-left,
+  .pic-slider .carousel .glyphicon-menu-right {
+    position: absolute;
+    top: 50%;
+    font-size: 30px; }
+  .pic-slider .carousel .glyphicon:hover {
+    color: #9d93ff; }
+
+.pic-slider .carousel:hover .carousel-control {
+  display: block; }
+
+.vm .carousel {
+  height: 450px;
+  background: #f8f8f8; }
+  .vm .carousel .item {
+    margin: 20px auto 0;
+    height: 400px;
+    background: #f8f8f8; }
+  .vm .carousel h2,
+  .vm .carousel li {
+    color: #9d93ff;
+    text-shadow: none;
+    font-family: Oswald, Arial, san-serif;
+    font-weight: bolder; }
+  .vm .carousel h2,
+  .vm .carousel li {
+    text-shadow: none; }
+  .vm .carousel h2 {
+    color: #9d93ff;
+    font-family: Oswald, Arial, san-serif;
+    font-weight: bolder;
+    animation-delay: .2s; }
+  .vm .carousel li {
+    color: #202020;
+    font-family: Lato, Calibri, sans-serif;
+    font-weight: 300;
+    font-size: 120%; }
+  .vm .carousel ul {
+    list-style-type: none; }
+  .vm .carousel .phil {
+    font-family: Oswald, Arial, san-serif;
+    font-weight: bolder;
+    font-size: 110%; }
+  .vm .carousel .li-1 {
+    animation-delay: .3s; }
+  .vm .carousel .li-2 {
+    animation-delay: .4s; }
+  .vm .carousel .li-3 {
+    animation-delay: .5s; }
+  .vm .carousel .li-4 {
+    animation-delay: .6s; }
+
+.vm .carousel-indicators {
+  position: absolute;
+  top: 48%;
+  left: 5%; }
+  .vm .carousel-indicators .active {
+    background: #9d93ff;
+    padding: 1%; }
+  .vm .carousel-indicators li {
+    display: block;
+    border: 2px solid #9d93ff; }
+
+@media (max-width: 425px) {
+  .vm .carousel {
+    height: 500px; }
+    .vm .carousel .item {
+      height: 450px; } }
+
+@media (max-width: 355px) {
+  .vm .carousel {
+    height: 550px; }
+    .vm .carousel .item {
+      height: 500px;
+      margin-top: 50px; } }
+
+@media (max-width: 289px) {
+  .vm .carousel {
+    height: 600px; }
+    .vm .carousel .item {
+      height: 550px;
+      margin-top: 50px; } }
+
+.facility {
+  position: relative;
+  height: 100vh;
+  background: #202020 url("../content/img/phcapampanga-facilities.jpg") no-repeat center fixed;
+  background-size: cover;
+  animation: panning 20s infinite linear; }
+
+@keyframes panning {
+  0% {
+    background-position: 0% 0%; }
+  25% {
+    background-position: 100% 100%; }
+  50% {
+    background-position: 100% 0%; }
+  75% {
+    background-position: 0 100%; }
+  200% {
+    background-position: 0 0; } }
+  .facility h2 {
+    position: relative;
+    top: 40%;
+    font-family: Oswald, Arial, san-serif;
+    font-weight: bolder;
+    color: #fff;
+    text-shadow: 2px 2px #202020; }
+  .facility p {
+    position: relative;
+    top: 41%;
+    font-family: Lato, Calibri, sans-serif;
+    font-style: italic;
+    font-size: 110%;
+    color: #fff;
+    text-shadow: 1px 1px #202020; }
+
+@media (max-height: 500px) {
+  .facility {
+    height: 500px; } }
+
+.contactus {
+  background: #fff url("../content/img/potters-hand-christian-academy-logo-bnw.png") no-repeat right;
+  background-size: contain; }
+  .contactus h2 {
+    color: #9d93ff;
+    font-family: Oswald, Arial, san-serif;
+    font-weight: bolder; }
+  .contactus .contact form {
+    margin: 10% auto;
+    padding: 5% 10%; }
+    .contactus .contact form .input,
+    .contactus .contact form textarea,
+    .contactus .contact form .submit {
+      padding: 2%;
+      width: 100%;
+      font-family: Lato, Calibri, sans-serif;
+      border: none;
+      border-radius: 5px;
+      background-color: #eee; }
+    .contactus .contact form .submit {
+      border: 2px solid #eee;
+      font-size: 120%;
+      font-family: Oswald, Arial, san-serif;
+      transition: .3s; }
+    .contactus .contact form .submit:hover {
+      border: 2px solid #9d93ff;
+      background: none;
+      color: #9d93ff;
+      transition: .3s; }
+  .contactus .social {
+    margin: 5% auto;
+    padding: 2.5% 2%; }
+    .contactus .social .wrap {
+      font-family: Lato, Calibri, sans-serif;
+      font-size: 120%; }
+      .contactus .social .wrap .text {
+        padding: 5%; }
+      .contactus .social .wrap .fa {
+        color: #9d93ff; }
+    .contactus .social .social-media1,
+    .contactus .social .social-media2,
+    .contactus .social .social-media3 {
+      margin: 1% 1%;
+      padding: 1.5% 0;
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 0 0 10px #d3d3d3; }
+    .contactus .social .social-media1 {
+      animation-delay: .2s; }
+    .contactus .social .social-media2 {
+      animation-delay: .3s; }
+    .contactus .social .social-media3 {
+      animation-delay: .4s; }
+
+footer {
+  padding: 1.5% 0;
+  font-family: "Open sans", sans-serif;
+  font-size: 90%;
+  background-color: #fff;
+  box-shadow: 0 0 10px #eee; }

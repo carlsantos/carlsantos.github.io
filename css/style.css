@@ -13,10 +13,11 @@ body {
   position: fixed;
   top: 4%;
   left: 4%;
-  z-index: 2;
+  z-index: 11;
   padding: 15px;
   font-size: 40px;
   color: #fff;
+  text-shadow: 1px 1px #202020;
 }
 
 .nav-toggle:hover { cursor: pointer }
@@ -26,7 +27,7 @@ body {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  z-index: 1;
+  z-index: 10;
   margin: 0!important;
   border-radius: 0!important;
   background-color: #202020;
@@ -230,7 +231,7 @@ body {
 
 .photos-left .jumbotron {
   height: 100vh;
-  background: #d3d3d3 url('../content/img/newpoint-long-exposure.jpg') no-repeat center center;
+  background: #d3d3d3 url('../content/img/carl-santos-church.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -253,36 +254,47 @@ body {
   .photos-right .btn { margin-bottom: 10% }
 }
 
+.home,
+.photos { background-color: #F8F8F8 }
+
 /**********************************************
                     ABOUT
 ***********************************************/
 .red { color: #ff3635 }
 
 .about{
-  color: #fff;
-  background: #d3d3d3 url('../content/img/carlsantos-long-exposure2.jpg') no-repeat top fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  transition: all 0.1s ease
+  z-index: 1;
+  color: #000;
+  background: #eee;
+  border: 1px solid #eee;
+  box-shadow: 0 0 4px #202020;
 }
 
+.about-left { padding: 100px 100px }
+
+.about-left img { animation-delay: .8s }
+
 .about h1 {
-  margin-top: 210px;
+  margin-top: 150px;
   font-family: Oswald, sans-serif;
 }
 
 .about p {
-  width: 50%;
-  margin: 1% auto 250px;
+  width: 70%;
+  margin: 0 0 150px;
   font-family: Lato, sans-serif;
   font-weight: 300;
-  font-size: 140%;
+  font-size: 150%;
   line-height: 175%;
+  animation-delay: .8s;
 }
 
-.about hr,
+@media(max-width: 992px) {
+  .about p {
+    width: 100%;
+  }
+}
+
 .services hr,
 .photography hr {
   padding: .1%;
@@ -305,10 +317,9 @@ body {
 .services {
   background: #fff url('../content/img/carl-santos-bnw-logo.png') no-repeat right;
   background-size: contain;
-
 }
 
-.services-icons { padding: 4% 0 2% }
+.services-icons { padding: 4% 0 8% }
 
 .services-icons .fa { color: #202020 }
 
@@ -325,11 +336,7 @@ body {
   line-height: 180%;
 }
 
-
-.photography h2,
-.photography h4,
-.photography p { color: #fff }
-
+.photography h2 { color: #fff }
 
 .photography {
   background-color: #eee;
@@ -338,7 +345,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  transition: all 0.1s ease
 }
 
 .photog1,
@@ -347,12 +353,21 @@ body {
 }
 
 .photog1 h4,
-.photog2 h4 { animation-delay: .1s }
+.photog2 h4 {
+  animation-delay: .1s;
+  color: #202020;
+  opacity: .1;
+}
+
 .photog1 p,
 .photog2 p {
   margin-bottom: 40px;
-  animation-delay: .2s
+  animation-delay: .2s;
+  color: #202020;
+  opacity: .1;
 }
+
+.photography mark { background-color: #fff }
 
 .resume {
   margin: 20px auto;
@@ -378,6 +393,7 @@ body {
 footer {
   padding: 1%;
   border-top: 1px solid #d3d3d3;
+  box-shadow: 0 0 10px #d3d3d3;
   font-family: lato, sans-serif;
   font-weight: 300;
 }
