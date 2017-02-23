@@ -242,23 +242,19 @@ body {
       margin-top: 50px; } }
 
 .facility {
+  animation: pan 20s infinite linear;
   position: relative;
   height: 100vh;
   background: #202020 url("../content/img/phcapampanga-facilities.jpg") no-repeat center fixed;
-  background-size: cover;
-  animation: panning 20s infinite linear; }
+  background-size: cover; }
 
-@keyframes panning {
+@keyframes pan {
   0% {
-    background-position: 0% 0%; }
-  25% {
-    background-position: 100% 100%; }
+    background-position: 0 0; }
   50% {
-    background-position: 100% 0%; }
-  75% {
-    background-position: 0 100%; }
-  200% {
-    background-position: 0 0; } }
+    background-position: 100% 0; }
+  100% {
+    background-position: 0, 0; } }
   .facility h2 {
     position: relative;
     top: 40%;
