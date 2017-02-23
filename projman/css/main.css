@@ -36,7 +36,7 @@ body {
   .navbar .navbar-nav .active a,
   .navbar .navbar-nav .active a:hover,
   .navbar .navbar-nav .active a:focus {
-    color: #9d93ff;
+    color: #2098d1;
     background-color: transparent !important; }
   .navbar .navbar-toggle {
     border: none;
@@ -70,7 +70,7 @@ body {
   .navbar2 .navbar-nav .active a:hover,
   .navbar2 .navbar-nav .active a:focus {
     color: #fff;
-    background-color: #9d93ff !important; }
+    background-color: #2098d1 !important; }
   .navbar2 .navbar-toggle {
     border: none;
     background: transparent !important; }
@@ -78,6 +78,9 @@ body {
 .header {
   height: 100vh;
   background: #F8F8F8 url("../content/img/phcapampanga-header.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover; }
   .header h1 {
     position: absolute;
@@ -123,7 +126,7 @@ body {
   margin-top: 150px;
   font-family: Oswald, Arial, san-serif;
   font-weight: bolder;
-  color: #9d93ff; }
+  color: #2098d1; }
 
 .about p {
   width: 50%;
@@ -141,18 +144,30 @@ body {
   .pic-slider .carousel .stud1 {
     height: 450px;
     background: #202020 url("../content/img/phcapampanga-students.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover; }
   .pic-slider .carousel .stud2 {
     height: 450px;
     background: #202020 url("../content/img/phcapampanga-students2.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover; }
   .pic-slider .carousel .stud3 {
     height: 450px;
     background: #202020 url("../content/img/phcapampanga-students3.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover; }
   .pic-slider .carousel .stud4 {
     height: 450px;
     background: #202020 url("../content/img/phcapampanga-students4.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover; }
   .pic-slider .carousel .carousel-control {
     display: none;
@@ -164,7 +179,7 @@ body {
     top: 50%;
     font-size: 30px; }
   .pic-slider .carousel .glyphicon:hover {
-    color: #9d93ff; }
+    color: #2098d1; }
 
 .pic-slider .carousel:hover .carousel-control {
   display: block; }
@@ -178,7 +193,7 @@ body {
     background: #f8f8f8; }
   .vm .carousel h2,
   .vm .carousel li {
-    color: #9d93ff;
+    color: #2098d1;
     text-shadow: none;
     font-family: Oswald, Arial, san-serif;
     font-weight: bolder; }
@@ -186,7 +201,7 @@ body {
   .vm .carousel li {
     text-shadow: none; }
   .vm .carousel h2 {
-    color: #9d93ff;
+    color: #2098d1;
     font-family: Oswald, Arial, san-serif;
     font-weight: bolder;
     animation-delay: .2s; }
@@ -215,11 +230,11 @@ body {
   top: 48%;
   left: 5%; }
   .vm .carousel-indicators .active {
-    background: #9d93ff;
+    background: #2098d1;
     padding: 1%; }
   .vm .carousel-indicators li {
     display: block;
-    border: 2px solid #9d93ff; }
+    border: 2px solid #2098d1; }
 
 @media (max-width: 425px) {
   .vm .carousel {
@@ -241,20 +256,27 @@ body {
       height: 550px;
       margin-top: 50px; } }
 
+@keyframes panning {
+  0% {
+    background-position: 0% 0%; }
+  25% {
+    background-position: 100% 100%; }
+  50% {
+    background-position: 100% 0%; }
+  75% {
+    background-position: 0 100%; }
+  200% {
+    background-position: 0 0; } }
+
 .facility {
-  animation: pan 20s infinite linear;
   position: relative;
   height: 100vh;
   background: #202020 url("../content/img/phcapampanga-facilities.jpg") no-repeat center fixed;
-  background-size: cover; }
-
-@keyframes pan {
-  0% {
-    background-position: 0 0; }
-  50% {
-    background-position: 100% 0; }
-  100% {
-    background-position: 0, 0; } }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  animation: panning 50s infinite linear; }
   .facility h2 {
     position: relative;
     top: 40%;
@@ -279,7 +301,7 @@ body {
   background: #fff url("../content/img/potters-hand-christian-academy-logo-bnw.png") no-repeat right;
   background-size: contain; }
   .contactus h2 {
-    color: #9d93ff;
+    color: #2098d1;
     font-family: Oswald, Arial, san-serif;
     font-weight: bolder; }
   .contactus .contact form {
@@ -300,9 +322,9 @@ body {
       font-family: Oswald, Arial, san-serif;
       transition: .3s; }
     .contactus .contact form .submit:hover {
-      border: 2px solid #9d93ff;
+      border: 2px solid #2098d1;
       background: none;
-      color: #9d93ff;
+      color: #2098d1;
       transition: .3s; }
   .contactus .social {
     margin: 5% auto;
@@ -313,7 +335,7 @@ body {
       .contactus .social .wrap .text {
         padding: 5%; }
       .contactus .social .wrap .fa {
-        color: #9d93ff; }
+        color: #2098d1; }
     .contactus .social .social-media1,
     .contactus .social .social-media2,
     .contactus .social .social-media3 {
