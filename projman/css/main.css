@@ -244,7 +244,7 @@ body {
 .facility {
   position: relative;
   height: 100vh;
-  background: #202020 url("../content/img/phcapampanga-facilities.jpg") no-repeat center fixed;
+  background: #202020 url("../content/img/phcapampanga-facilities.JPG") no-repeat center fixed;
   background-size: cover;
   animation: panning 20s infinite linear; }
 
