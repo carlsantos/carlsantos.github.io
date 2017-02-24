@@ -269,7 +269,6 @@ body {
     background-position: 0 0; } }
 
 .facility {
-  position: relative;
   height: 100vh;
   background: #202020 url("../content/img/phcapampanga-facilities.jpg") no-repeat center fixed;
   -webkit-background-size: cover;
