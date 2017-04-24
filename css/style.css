@@ -231,7 +231,7 @@ body {
 
 .photos-left .jumbotron {
   height: 100vh;
-  background: #d3d3d3 url('../content/img/carl-santos-church.jpg') no-repeat center center;
+  background: #d3d3d3 url('../content/img/carlsantos-burst-shot.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -263,11 +263,9 @@ body {
 .red { color: #ff3635 }
 
 .about{
-  z-index: 1;
   color: #000;
   background: #eee;
   border: 1px solid #eee;
-  box-shadow: 0 0 4px #202020;
 }
 
 .about-left { padding: 100px 100px }
@@ -339,8 +337,10 @@ body {
 .photography h2 { color: #fff }
 
 .photography {
+  height: inherit;
+  border-radius: 0!important;
   background-color: #eee;
-  background: url('../content/img/carlsantos-burst-shot2.jpg') no-repeat center fixed;
+  background: url('../content/img/carlsantos-sunrise.jpg') no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -348,8 +348,12 @@ body {
 }
 
 .photog1,
-.photog2 img {
-  margin-top: 40px;
+.photog2 {
+  margin-bottom: 2%;
+  padding: 1%;
+  background: #F8F8F8;
+  box-shadow: 0 0 15px #202020;
+  transition: .5s;
 }
 
 .photog1 h4,
@@ -361,13 +365,11 @@ body {
 
 .photog1 p,
 .photog2 p {
-  margin-bottom: 40px;
   animation-delay: .2s;
   color: #202020;
   opacity: .1;
 }
 
-.photography mark { background-color: #fff }
 
 .resume {
   margin: 20px auto;

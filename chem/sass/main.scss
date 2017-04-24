@@ -1,0 +1,58 @@
+$white: #fff;
+$black: #202020;
+$blue: #2098d1;
+$gray: #eee;
+$transparent: transparent;
+$font1: 'Open Sans';
+
+.navbar-default {
+  .navbar-brand,
+  .navbar-nav { font-family: $font1; }
+
+  .navbar-brand {
+    font-size: 140%;
+    font-weight: 800;
+  }
+
+  .navbar-toggle {
+    background: $white!important;
+    border-color: $white!important;
+  }
+
+  .navbar-toggle:hover { background: $transparent!important; }
+
+  .navbar-nav {
+    font-size: 110%;
+    font-weight: 600;
+  }
+
+  .navbar-nav a:hover { color: $blue!important }
+}
+
+.navbar {
+  padding: 3% 2%;
+  background: $transparent;
+  border: $transparent;
+  transition: .5s;
+
+  .navbar-nav .active a,
+  .navbar-nav .active a:focus {
+    color: $blue;
+    background-color: transparent !important; }
+}
+
+.navbar2 {
+  padding: 0;
+  background: $white;
+  border-bottom: 2px solid $gray;
+  transition: .5s;
+
+  .navbar-nav .active a,
+  .navbar-nav .active a:focus {
+    color: $white;
+    background-color: $blue!important; }
+}
+
+.home {
+  height: 200vh;
+}
