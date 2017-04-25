@@ -25,14 +25,21 @@
 .navbar-default .navbar-nav a:hover {
   color: #2098d1 !important; }
 
+@media (max-width: 767px) {
+  .navbar-default .navbar-collapse {
+    background: #fff; } }
+
 .navbar {
-  padding: 3% 2%;
+  padding: 3% 5%;
   background: transparent;
   border: transparent;
   transition: .5s; }
   .navbar .navbar-brand,
   .navbar .navbar-nav li a {
     color: #fff !important; }
+  @media (max-width: 767px) {
+    .navbar .navbar-nav li a {
+      color: #202020 !important; } }
   .navbar .navbar-nav .active a,
   .navbar .navbar-nav .active a:focus {
     color: #2098d1;
@@ -59,19 +66,20 @@
     position: relative;
     top: 50%;
     left: 5%;
-    width: 35%; }
+    width: 40%; }
     .home .head-text h1,
     .home .head-text p,
     .home .head-text .join {
       color: #fff; }
     .home .head-text h1 {
       font-family: "Open Sans";
-      font-weight: 700;
-      font-size: 280%; }
+      font-weight: 800;
+      font-size: 300%; }
     .home .head-text p {
       font-family: "Lato"; }
     .home .head-text .join {
-      font-family: "Lato";
+      font-family: "Open Sans";
+      font-weight: 600;
       background: transparent;
       border: 2px solid #fff; }
     .home .head-text .join:hover {
@@ -79,3 +87,15 @@
       background: #fff;
       color: #202020;
       transition: .5s; }
+  @media (max-width: 715px) {
+    .home .head-text {
+      top: 40%;
+      left: 3%;
+      width: 80%; } }
+  @media (max-width: 373px) {
+    .home .head-text {
+      width: 95%; } }
+
+@media (max-height: 600px) {
+  .home {
+    height: 600px; } }
