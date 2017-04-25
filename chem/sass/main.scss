@@ -4,6 +4,13 @@ $blue: #2098d1;
 $gray: #eee;
 $transparent: transparent;
 $font1: 'Open Sans';
+$font2: 'Lato';
+
+.no-mbp {
+  padding: 0!important;
+  margin: 0!important;
+  border-radius: 0!important;
+}
 
 .navbar-default {
   .navbar-brand,
@@ -35,6 +42,8 @@ $font1: 'Open Sans';
   border: $transparent;
   transition: .5s;
 
+  .navbar-brand,
+  .navbar-nav li a { color: $white!important; }
   .navbar-nav .active a,
   .navbar-nav .active a:focus {
     color: $blue;
@@ -47,12 +56,48 @@ $font1: 'Open Sans';
   border-bottom: 2px solid $gray;
   transition: .5s;
 
+  .navbar-brand,
+  .navbar-nav li a { color: $black!important; }
   .navbar-nav .active a,
   .navbar-nav .active a:focus {
-    color: $white;
+    color: $white!important;
     background-color: $blue!important; }
 }
 
 .home {
-  height: 200vh;
+  height: 100vh;
+  background: #d3d3d3 url('../assets/img/smoke2.jpg') no-repeat center center;
+  background-size: cover;
+
+  .head-text {
+    position: relative;
+    top: 50%;
+    left: 5%;
+    width: 35%;
+
+    h1,
+    p,
+    .join { color: $white; }
+
+    h1 {
+      font-family: $font1;
+      font-weight: 700;
+      font-size: 280%;
+    }
+
+    p { font-family: $font2; }
+
+    .join {
+      font-family: $font2;
+      background: $transparent;
+      border: 2px solid $white;
+    }
+
+    .join:hover {
+      text-decoration: none;
+      background: $white;
+      color: $black;
+      transition: .5s;
+    }
+  }
 }

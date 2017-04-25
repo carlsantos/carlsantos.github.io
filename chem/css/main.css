@@ -1,3 +1,8 @@
+.no-mbp {
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important; }
+
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav {
   font-family: "Open Sans"; }
@@ -25,6 +30,9 @@
   background: transparent;
   border: transparent;
   transition: .5s; }
+  .navbar .navbar-brand,
+  .navbar .navbar-nav li a {
+    color: #fff !important; }
   .navbar .navbar-nav .active a,
   .navbar .navbar-nav .active a:focus {
     color: #2098d1;
@@ -35,10 +43,39 @@
   background: #fff;
   border-bottom: 2px solid #eee;
   transition: .5s; }
+  .navbar2 .navbar-brand,
+  .navbar2 .navbar-nav li a {
+    color: #202020 !important; }
   .navbar2 .navbar-nav .active a,
   .navbar2 .navbar-nav .active a:focus {
-    color: #fff;
+    color: #fff !important;
     background-color: #2098d1 !important; }
 
 .home {
-  height: 200vh; }
+  height: 100vh;
+  background: #d3d3d3 url("../assets/img/smoke2.jpg") no-repeat center center;
+  background-size: cover; }
+  .home .head-text {
+    position: relative;
+    top: 50%;
+    left: 5%;
+    width: 35%; }
+    .home .head-text h1,
+    .home .head-text p,
+    .home .head-text .join {
+      color: #fff; }
+    .home .head-text h1 {
+      font-family: "Open Sans";
+      font-weight: 700;
+      font-size: 280%; }
+    .home .head-text p {
+      font-family: "Lato"; }
+    .home .head-text .join {
+      font-family: "Lato";
+      background: transparent;
+      border: 2px solid #fff; }
+    .home .head-text .join:hover {
+      text-decoration: none;
+      background: #fff;
+      color: #202020;
+      transition: .5s; }
