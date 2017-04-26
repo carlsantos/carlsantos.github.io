@@ -17,8 +17,8 @@ $font2: 'Lato';
   .navbar-nav { font-family: $font1; }
 
   .navbar-brand {
-    font-size: 140%;
-    font-weight: 800;
+    font-size: 150%;
+    font-weight: 700;
   }
 
   .navbar-toggle {
@@ -29,8 +29,8 @@ $font2: 'Lato';
   .navbar-toggle:hover { background: $transparent!important; }
 
   .navbar-nav {
-    font-size: 110%;
-    font-weight: 600;
+    font-size: 105%;
+    font-weight: 400;
   }
 
   .navbar-nav a:hover { color: $blue!important }
@@ -42,7 +42,7 @@ $font2: 'Lato';
 }
 
 .navbar {
-  padding: 3% 5%;
+  padding: 0 5%;
   background: $transparent;
   border: $transparent;
   transition: .5s;
@@ -54,22 +54,27 @@ $font2: 'Lato';
   }
   .navbar-nav .active a,
   .navbar-nav .active a:focus {
-    color: $blue;
+    color: $blue!important;
     background-color: transparent !important; }
 }
 
 .navbar2 {
-  padding: 0;
+  padding: 0 5%;
   background: $white;
   border-bottom: 2px solid $gray;
   transition: .5s;
 
   .navbar-brand,
   .navbar-nav li a { color: $black!important; }
+  .navbar-nav a:hover,
+  .navbar-nav .active a:hover{
+    color: $white!important;
+    background-color: $blue!important
+  }
   .navbar-nav .active a,
   .navbar-nav .active a:focus {
-    color: $white!important;
-    background-color: $blue!important; }
+    color: $blue!important;
+  }
 }
 
 .home {
@@ -147,7 +152,7 @@ $font2: 'Lato';
   .about-right-panel {
     font-family: $font2;
     font-size: 19px;
-    
+
   }
 
   .about-right-panel {
