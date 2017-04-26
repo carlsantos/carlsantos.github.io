@@ -99,3 +99,40 @@
 @media (max-height: 600px) {
   .home {
     height: 600px; } }
+
+.about h1 {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 300%; }
+
+.about .title {
+  margin: 8% 0% 2%;
+  text-align: center; }
+
+.about .about-left-panel,
+.about .about-right-panel {
+  font-family: "Lato";
+  font-size: 19px; }
+
+.about .about-right-panel {
+  padding: 4%; }
+
+.about .about-left-panel {
+  padding: 13% 9%; }
+
+.about .gif {
+  background: #d3d3d3 url("../assets/img/chem-lab.jpg") no-repeat center center;
+  width: 80vh;
+  height: 70vh; }
+
+@media (max-width: 766px) {
+  .about .title {
+    font-size: 25px; }
+  .about .about-left-panel {
+    font-size: 17px; }
+  .about .gif {
+    width: auto; } }
+
+@media (max-width: 988px) {
+  .about .gif {
+    width: auto; } }

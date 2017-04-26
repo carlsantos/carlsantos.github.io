@@ -126,3 +126,51 @@ $font2: 'Lato';
 @media(max-height: 600px ) {
   .home { height: 600px }
 }
+
+
+.about {
+
+
+  h1 {
+    font-family: $font1;
+    font-weight: 800;
+    font-size: 300%;
+  }
+
+  .title {
+    margin: 8% 0% 2%;
+    text-align: center;
+
+  }
+
+  .about-left-panel,
+  .about-right-panel {
+    font-family: $font2;
+    font-size: 19px;
+    
+  }
+
+  .about-right-panel {
+    padding: 4%;
+  }
+
+  .about-left-panel {
+    padding: 13% 9%;
+  }
+
+  .gif {
+    background: #d3d3d3 url('../assets/img/chem-lab.jpg') no-repeat center center;
+    width: 80vh;
+    height: 70vh;
+  }
+
+  @media(max-width: 766px) {
+    .title { font-size: 25px }
+    .about-left-panel { font-size: 17px }
+    .gif { width: auto; }
+  }
+
+  @media(max-width: 988px) {
+    .gif { width: auto;}
+  }
+}
