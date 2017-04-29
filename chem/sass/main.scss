@@ -6,6 +6,8 @@ $transparent: transparent;
 $font1: 'Open Sans';
 $font2: 'Lato';
 
+body { overflow-x: hidden; }
+
 .no-mbp {
   padding: 0!important;
   margin: 0!important;
@@ -13,6 +15,7 @@ $font2: 'Lato';
 }
 
 .navbar-default {
+  text-shadow: .1px .1px $black;
   .navbar-brand,
   .navbar-nav { font-family: $font1; }
 
@@ -29,7 +32,7 @@ $font2: 'Lato';
   .navbar-toggle:hover { background: $transparent!important; }
 
   .navbar-nav {
-    font-size: 105%;
+    font-size: 110%;
     font-weight: 400;
   }
 
@@ -84,13 +87,16 @@ $font2: 'Lato';
 
   .head-text {
     position: relative;
-    top: 50%;
+    top: 45%;
     left: 5%;
     width: 40%;
 
     h1,
     p,
-    .join { color: $white; }
+    .join {
+      color: $white;
+      text-shadow: .1px .1px $black;
+    }
 
     h1 {
       font-family: $font1;
@@ -132,14 +138,11 @@ $font2: 'Lato';
   .home { height: 600px }
 }
 
-
 .about {
 
-
-  h1 {
+  h2 {
     font-family: $font1;
     font-weight: 800;
-    font-size: 300%;
   }
 
   .title {
@@ -155,12 +158,11 @@ $font2: 'Lato';
 
   }
 
-  .about-right-panel {
-    padding: 4%;
-  }
+  .about-right-panel { padding: 4%; }
 
   .about-left-panel {
-    padding: 13% 9%;
+    padding: 10%;
+    text-align: center;
   }
 
   .gif {
@@ -177,5 +179,59 @@ $font2: 'Lato';
 
   @media(max-width: 988px) {
     .gif { width: auto;}
+  }
+}
+
+.features {
+  padding: 8% 0!important;
+  background: #a9e4f7;
+  background: -moz-linear-gradient(top, #a9e4f7 4%, #0fb4e7 100%);
+  background: -webkit-linear-gradient(top, #a9e4f7 4%,#0fb4e7 100%);
+  background: linear-gradient(to bottom, #a9e4f7 4%,#0fb4e7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e4f7', endColorstr='#0fb4e7',GradientType=0 );
+
+  h2 {
+    font-family: $font1;
+    font-weight: 800;
+    font-size: 300%;
+    color: $white;
+  }
+  .three-icons {
+    width: 80%;
+    margin: auto;
+
+    .book,
+    .simulation,
+    .video {
+      padding: 5% 3%;
+      margin-top: 2.5%;
+      margin-bottom: 2.5%;
+      background: $white;
+      box-shadow: 0 1px 20px #888889;
+      border-radius: 2px;
+      opacity: .85;
+
+      h3 {
+        font-family: $font1;
+        font-weight: 700;
+      }
+
+      p {
+        font-family: $font2;
+        font-size: 120%;
+      }
+
+      i {
+        position: absolute;
+        top: -15%;
+        left: 38%;
+        padding: 10px 16px;
+        border: 1px solid $blue;
+        border-radius: 1000px;
+        background: $blue;
+        color: $white;
+        box-shadow: 0 1px 10px #888889;
+      }
+    }
   }
 }

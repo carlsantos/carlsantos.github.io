@@ -1,33 +1,32 @@
+body {
+  overflow-x: hidden; }
+
 .no-mbp {
   padding: 0 !important;
   margin: 0 !important;
   border-radius: 0 !important; }
 
-.navbar-default .navbar-brand,
-.navbar-default .navbar-nav {
-  font-family: "Open Sans"; }
-
-.navbar-default .navbar-brand {
-  font-size: 150%;
-  font-weight: 700; }
-
-.navbar-default .navbar-toggle {
-  background: #fff !important;
-  border-color: #fff !important; }
-
-.navbar-default .navbar-toggle:hover {
-  background: transparent !important; }
-
-.navbar-default .navbar-nav {
-  font-size: 105%;
-  font-weight: 400; }
-
-.navbar-default .navbar-nav a:hover {
-  color: #2098d1 !important; }
-
-@media (max-width: 767px) {
-  .navbar-default .navbar-collapse {
-    background: #fff; } }
+.navbar-default {
+  text-shadow: 0.1px 0.1px #202020; }
+  .navbar-default .navbar-brand,
+  .navbar-default .navbar-nav {
+    font-family: "Open Sans"; }
+  .navbar-default .navbar-brand {
+    font-size: 150%;
+    font-weight: 700; }
+  .navbar-default .navbar-toggle {
+    background: #fff !important;
+    border-color: #fff !important; }
+  .navbar-default .navbar-toggle:hover {
+    background: transparent !important; }
+  .navbar-default .navbar-nav {
+    font-size: 110%;
+    font-weight: 400; }
+  .navbar-default .navbar-nav a:hover {
+    color: #2098d1 !important; }
+  @media (max-width: 767px) {
+    .navbar-default .navbar-collapse {
+      background: #fff; } }
 
 .navbar {
   padding: 0 5%;
@@ -67,13 +66,14 @@
   background-size: cover; }
   .home .head-text {
     position: relative;
-    top: 50%;
+    top: 45%;
     left: 5%;
     width: 40%; }
     .home .head-text h1,
     .home .head-text p,
     .home .head-text .join {
-      color: #fff; }
+      color: #fff;
+      text-shadow: 0.1px 0.1px #202020; }
     .home .head-text h1 {
       font-family: "Open Sans";
       font-weight: 800;
@@ -103,10 +103,9 @@
   .home {
     height: 600px; } }
 
-.about h1 {
+.about h2 {
   font-family: "Open Sans";
-  font-weight: 800;
-  font-size: 300%; }
+  font-weight: 800; }
 
 .about .title {
   margin: 8% 0% 2%;
@@ -121,7 +120,8 @@
   padding: 4%; }
 
 .about .about-left-panel {
-  padding: 13% 9%; }
+  padding: 10%;
+  text-align: center; }
 
 .about .gif {
   background: #d3d3d3 url("../assets/img/chem-lab.jpg") no-repeat center center;
@@ -139,3 +139,51 @@
 @media (max-width: 988px) {
   .about .gif {
     width: auto; } }
+
+.features {
+  padding: 8% 0 !important;
+  background: #a9e4f7;
+  background: -moz-linear-gradient(top, #a9e4f7 4%, #0fb4e7 100%);
+  background: -webkit-linear-gradient(top, #a9e4f7 4%, #0fb4e7 100%);
+  background: linear-gradient(to bottom, #a9e4f7 4%, #0fb4e7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e4f7', endColorstr='#0fb4e7',GradientType=0 ); }
+  .features h2 {
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 300%;
+    color: #fff; }
+  .features .three-icons {
+    width: 80%;
+    margin: auto; }
+    .features .three-icons .book,
+    .features .three-icons .simulation,
+    .features .three-icons .video {
+      padding: 5% 3%;
+      margin-top: 2.5%;
+      margin-bottom: 2.5%;
+      background: #fff;
+      box-shadow: 0 1px 20px #888889;
+      border-radius: 2px;
+      opacity: .85; }
+      .features .three-icons .book h3,
+      .features .three-icons .simulation h3,
+      .features .three-icons .video h3 {
+        font-family: "Open Sans";
+        font-weight: 700; }
+      .features .three-icons .book p,
+      .features .three-icons .simulation p,
+      .features .three-icons .video p {
+        font-family: "Lato";
+        font-size: 120%; }
+      .features .three-icons .book i,
+      .features .three-icons .simulation i,
+      .features .three-icons .video i {
+        position: absolute;
+        top: -15%;
+        left: 38%;
+        padding: 10px 16px;
+        border: 1px solid #2098d1;
+        border-radius: 1000px;
+        background: #2098d1;
+        color: #fff;
+        box-shadow: 0 1px 10px #888889; }
