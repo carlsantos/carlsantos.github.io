@@ -15,7 +15,6 @@ body { overflow-x: hidden; }
 }
 
 .navbar-default {
-  text-shadow: .1px .1px $black;
   .navbar-brand,
   .navbar-nav { font-family: $font1; }
 
@@ -33,7 +32,7 @@ body { overflow-x: hidden; }
 
   .navbar-nav {
     font-size: 110%;
-    font-weight: 400;
+    font-weight: 600;
   }
 
   .navbar-nav a:hover { color: $blue!important }
@@ -93,10 +92,7 @@ body { overflow-x: hidden; }
 
     h1,
     p,
-    .join {
-      color: $white;
-      text-shadow: .1px .1px $black;
-    }
+    .join { color: $white; }
 
     h1 {
       font-family: $font1;
@@ -183,7 +179,7 @@ body { overflow-x: hidden; }
 }
 
 .features {
-  padding: 8% 0!important;
+  padding: 5% 0!important;
   background: #a9e4f7;
   background: -moz-linear-gradient(top, #a9e4f7 4%, #0fb4e7 100%);
   background: -webkit-linear-gradient(top, #a9e4f7 4%,#0fb4e7 100%);
@@ -203,34 +199,45 @@ body { overflow-x: hidden; }
     .book,
     .simulation,
     .video {
-      padding: 5% 3%;
-      margin-top: 2.5%;
-      margin-bottom: 2.5%;
-      background: $white;
-      box-shadow: 0 1px 20px #888889;
-      border-radius: 2px;
+      margin-top: 10%;
+      margin-bottom: 8%;
       opacity: .85;
 
-      h3 {
-        font-family: $font1;
-        font-weight: 700;
-      }
+      div {
+        width: 98%;
+        padding: 15% 3%;
+        margin: auto;
+        background: $white;
+        box-shadow: 0 1px 20px #888889;
+        border-radius: 2px;
 
-      p {
-        font-family: $font2;
-        font-size: 120%;
-      }
+        h3 {
+          font-family: $font1;
+          font-weight: 700;
+        }
 
-      i {
-        position: absolute;
-        top: -15%;
-        left: 38%;
-        padding: 10px 16px;
-        border: 1px solid $blue;
-        border-radius: 1000px;
-        background: $blue;
-        color: $white;
-        box-shadow: 0 1px 10px #888889;
+        p {
+          font-family: $font2;
+          font-size: 120%;
+        }
+
+        i {
+          position: absolute;
+          left: 50%;
+          top: -2%;
+          transform: translate(-50%,-50%);
+          margin: auto;
+          padding: 10px 16px;
+          border: 1px solid $blue;
+          border-radius: 1000px;
+          background: $blue;
+          color: $white;
+          box-shadow: 0 1px 2px #888889;
+        }
+
+        @media(max-width: 767px) {
+
+        }
       }
     }
   }
