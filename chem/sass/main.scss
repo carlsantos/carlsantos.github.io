@@ -68,15 +68,18 @@ body { overflow-x: hidden; }
 
   .navbar-brand,
   .navbar-nav li a { color: $black!important; }
+
+  .navbar-nav .active a,
+  .navbar-nav .active a:focus {
+    color: $blue!important;
+  }
+
   .navbar-nav a:hover,
   .navbar-nav .active a:hover{
     color: $white!important;
     background-color: $blue!important
   }
-  .navbar-nav .active a,
-  .navbar-nav .active a:focus {
-    color: $blue!important;
-  }
+
 }
 
 .home {
@@ -86,7 +89,7 @@ body { overflow-x: hidden; }
 
   .head-text {
     position: relative;
-    top: 45%;
+    top: 48%;
     left: 5%;
     width: 40%;
 
@@ -179,7 +182,7 @@ body { overflow-x: hidden; }
 }
 
 .features {
-  padding: 5% 0!important;
+  padding: 5% 0 10%;
   background: #a9e4f7;
   background: -moz-linear-gradient(top, #a9e4f7 4%, #0fb4e7 100%);
   background: -webkit-linear-gradient(top, #a9e4f7 4%,#0fb4e7 100%);
@@ -192,6 +195,7 @@ body { overflow-x: hidden; }
     font-size: 300%;
     color: $white;
   }
+
   .three-icons {
     width: 80%;
     margin: auto;
@@ -199,17 +203,17 @@ body { overflow-x: hidden; }
     .book,
     .simulation,
     .video {
-      margin-top: 10%;
+      margin-top: 5%;
       margin-bottom: 8%;
       opacity: .85;
 
       div {
-        width: 98%;
+        width: 100%;
         padding: 15% 3%;
         margin: auto;
         background: $white;
         box-shadow: 0 1px 20px #888889;
-        border-radius: 2px;
+        border-radius: 5px;
 
         h3 {
           font-family: $font1;
@@ -226,7 +230,6 @@ body { overflow-x: hidden; }
           left: 50%;
           top: -2%;
           transform: translate(-50%,-50%);
-          margin: auto;
           padding: 10px 16px;
           border: 1px solid $blue;
           border-radius: 1000px;
@@ -234,10 +237,38 @@ body { overflow-x: hidden; }
           color: $white;
           box-shadow: 0 1px 2px #888889;
         }
+      }
+    }
+  }
+}
 
-        @media(max-width: 767px) {
+.lessons {
 
-        }
+  .lesson-pane {
+    position: relative;
+    top: -15%;
+    transform: translateY(-15%);
+    padding: 5% 5% 8%;
+    box-shadow: 0 5px 15px #888889;
+    background: $white;
+    border-radius: 2px;
+    z-index: 100;
+
+    h2 {
+      font-family: $font1;
+      font-weight: 800;
+      font-size: 300%;
+    }
+
+    .grade7,
+    .grade8,
+    .grade9,
+    .grade10 {
+      padding: 2%;
+
+      h3 {
+        font-family: $font1;
+        font-weight: 700;
       }
     }
   }

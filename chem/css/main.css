@@ -56,13 +56,13 @@ body {
   .navbar2 .navbar-brand,
   .navbar2 .navbar-nav li a {
     color: #202020 !important; }
+  .navbar2 .navbar-nav .active a,
+  .navbar2 .navbar-nav .active a:focus {
+    color: #2098d1 !important; }
   .navbar2 .navbar-nav a:hover,
   .navbar2 .navbar-nav .active a:hover {
     color: #fff !important;
     background-color: #2098d1 !important; }
-  .navbar2 .navbar-nav .active a,
-  .navbar2 .navbar-nav .active a:focus {
-    color: #2098d1 !important; }
 
 .home {
   height: 100vh;
@@ -70,7 +70,7 @@ body {
   background-size: cover; }
   .home .head-text {
     position: relative;
-    top: 45%;
+    top: 48%;
     left: 5%;
     width: 40%; }
     .home .head-text h1,
@@ -144,7 +144,7 @@ body {
     width: auto; } }
 
 .features {
-  padding: 5% 0 !important;
+  padding: 5% 0 10%;
   background: #a9e4f7;
   background: -moz-linear-gradient(top, #a9e4f7 4%, #0fb4e7 100%);
   background: -webkit-linear-gradient(top, #a9e4f7 4%, #0fb4e7 100%);
@@ -167,12 +167,12 @@ body {
       .features .three-icons .book div,
       .features .three-icons .simulation div,
       .features .three-icons .video div {
-        width: 98%;
+        width: 100%;
         padding: 15% 3%;
         margin: auto;
         background: #fff;
         box-shadow: 0 1px 20px #888889;
-        border-radius: 2px; }
+        border-radius: 5px; }
         .features .three-icons .book div h3,
         .features .three-icons .simulation div h3,
         .features .three-icons .video div h3 {
@@ -190,10 +190,34 @@ body {
           left: 50%;
           top: -2%;
           transform: translate(-50%, -50%);
-          margin: auto;
           padding: 10px 16px;
           border: 1px solid #2098d1;
           border-radius: 1000px;
           background: #2098d1;
           color: #fff;
           box-shadow: 0 1px 2px #888889; }
+
+.lessons .lesson-pane {
+  position: relative;
+  top: -15%;
+  transform: translateY(-15%);
+  padding: 5% 5% 8%;
+  box-shadow: 0 5px 15px #888889;
+  background: #fff;
+  border-radius: 2px;
+  z-index: 100; }
+  .lessons .lesson-pane h2 {
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 300%; }
+  .lessons .lesson-pane .grade7,
+  .lessons .lesson-pane .grade8,
+  .lessons .lesson-pane .grade9,
+  .lessons .lesson-pane .grade10 {
+    padding: 2%; }
+    .lessons .lesson-pane .grade7 h3,
+    .lessons .lesson-pane .grade8 h3,
+    .lessons .lesson-pane .grade9 h3,
+    .lessons .lesson-pane .grade10 h3 {
+      font-family: "Open Sans";
+      font-weight: 700; }

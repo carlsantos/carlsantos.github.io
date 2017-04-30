@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body data-spy="scroll" data-target=".navbar" data-offset="100">
     <div class="container-fluid">
       <div class="row">
         <!--NAVBAR-->
@@ -30,7 +30,7 @@
                 <li class="active"><a href="#home">HOME</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#features">FEATURES</a></li>
-                <li><a href="#">LESSONS</a></li>
+                <li><a href="#lessons">LESSONS</a></li>
                 <li><a href="#">CONTACT</a></li>
                 <li><a href="#">ACCOUNT</a></li>
               </ul>
@@ -52,7 +52,7 @@
 
         <!-- ABOUT -->
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-mbp about" id="about">
-          <div class="head-text">
+          <div>
             <div class="col-lg-6 col-md-7 col-sm-7 col-xs-12 no-mbp">
                 <div class="about-left-panel" data-aos="fade-up" data-aos-offset="400">
                   <h2 class="title">ABOUT CHEMISTRY LABORATORY</h2>
@@ -83,14 +83,14 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 simulation text-center" id=simulation>
-              <div data-aos="fade-up" data-aos-offset="200">
+              <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="200">
                 <i class="fa-5x fa fa-html5" aria-hidden="true"></i>
                   <h3>SIMULATION</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 video text-center" id=video>
-              <div data-aos="fade-up" data-aos-offset="200">
+              <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="400">
                 <i class="fa-5x fa fa-html5" aria-hidden="true"></i>
                   <h3>VIDEOS</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -100,6 +100,31 @@
         </div>
         <!--END of FEATURES-->
 
+        <!--LESSONS-->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 lessons">
+          <div class="lesson-pane text-center col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10" id="lessons">
+            <h2 data-aos="fade-up">LESSONS</h2>
+            <br>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 grade7" data-aos="fade-right" data-aos-offset="200">
+              <h3>GRADE 7</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 grade8" data-aos="fade-left" data-aos-offset="200">
+              <h3>GRADE 8</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 grade9" data-aos="fade-right" data-aos-offset="200">
+              <h3>GRADE 9</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 grade10" data-aos="fade-left" data-aos-offset="200">
+              <h3>GRADE 10</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+        <!--END of LESSONS-->
+
       <!--END of ROW Wag Lalagpas-->
       </div>
     </div>
@@ -107,6 +132,7 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/aos.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
