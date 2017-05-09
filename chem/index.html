@@ -10,6 +10,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="100">
     <div class="container-fluid">
@@ -31,8 +32,8 @@
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#features">FEATURES</a></li>
                 <li><a href="#lessons">LESSONS</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">ACCOUNT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#" role="button" data-toggle="modal" data-target="#login-modal">ACCOUNT</a></li>
               </ul>
             </div>
           </div>
@@ -51,20 +52,18 @@
         <!--END of LANDING-->
 
         <!-- ABOUT -->
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-mbp about" id="about">
-          <div>
-            <div class="col-lg-6 col-md-7 col-sm-7 col-xs-12 no-mbp">
-                <div class="about-left-panel" data-aos="fade-up" data-aos-offset="400">
-                  <h2 class="title">ABOUT CHEMISTRY LABORATORY</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 about" id="about">
+          <div class="col-lg-6 col-md-7 col-sm-7 col-xs-12 no-mbp">
+            <div class="about-left-panel" data-aos="fade-up" data-aos-offset="400">
+              <h2 class="title">ABOUT CHEMISTRY LABORATORY</h2>
+              <p>CheMix is a web development project that offers books, video tutorials and guided laboratory simulation. It is based from Department of Education cirriculum for Grade 7 to 10.</p>
             </div>
-            <div class="col-lg-6 col-md-5 col-sm-5 col-xs-12 no-mbp">
-              <div class="about-right-panel" data-aos="fade-up" data-aos-offset="400">
-                <div class="gif">
-                </div>
-                <br>
+          </div>
+          <div class="col-lg-6 col-md-5 col-sm-5 col-xs-12 no-mbp">
+            <div class="about-right-panel" data-aos="fade-up" data-aos-offset="400">
+              <div class="gif">
               </div>
+              <br>
             </div>
           </div>
         </div>
@@ -77,21 +76,21 @@
           <div class="three-icons">
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 book text-center" id=book>
                 <div data-aos="fade-up" data-aos-offset="200">
-                  <i class="fa-5x fa fa-html5" aria-hidden="true"></i>
+                  <i class="fa-5x fa fa-book" aria-hidden="true"></i>
                   <h3>BOOKS</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 simulation text-center" id=simulation>
               <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="200">
-                <i class="fa-5x fa fa-html5" aria-hidden="true"></i>
+                <i class="fa-5x fa fa-hand-paper-o" aria-hidden="true"></i>
                   <h3>SIMULATION</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 video text-center" id=video>
               <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="400">
-                <i class="fa-5x fa fa-html5" aria-hidden="true"></i>
+                <i class="fa-5x fa fa-video-camera" aria-hidden="true"></i>
                   <h3>VIDEOS</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
@@ -105,19 +104,19 @@
           <div class="lesson-pane text-center col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-10 col-md-10 col-sm-10 col-xs-10" id="lessons">
             <h2 data-aos="fade-up">LESSONS</h2>
             <br>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 grade7" data-aos="fade-right" data-aos-offset="200">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 grade7" data-aos="fade-up">
               <h3>GRADE 7</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 grade8" data-aos="fade-left" data-aos-offset="200">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 grade8" data-aos="fade-up">
               <h3>GRADE 8</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 grade9" data-aos="fade-right" data-aos-offset="200">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 grade9" data-aos="fade-up">
               <h3>GRADE 9</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 grade10" data-aos="fade-left" data-aos-offset="200">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 grade10" data-aos="fade-up">
               <h3>GRADE 10</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
@@ -125,9 +124,156 @@
         </div>
         <!--END of LESSONS-->
 
-      <!--END of ROW Wag Lalagpas-->
+        <!-- BRIDGE -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="bridge">
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 text-left">
+              <h3>Chemistry Simulation</h3><br>
+              <p>Want to Learn More about chemistry? Sign up for our newsletter</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12 subscribe"><br><br><br>
+                <input type="text" name="" placeholder="Enter your email address">
+                <button type="button" name="" class="btn btn-primary">SUBMIT</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="footer">
+              <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs">
+                  <!-- Extra Space. Oh! fvk pwede mo na kong kuyugin carl ang traditional ng naisip kong to :( -->
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs footer-links">
+                <h3>Community</h3>
+                <ul>
+                  <li><a href="#">Link1</a></li><br>
+                  <li><a href="#">Link2</a></li><br>
+                  <li><a href="#">Link3</a></li><br>
+                  <li><a href="#">Link4</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs footer-links">
+                <h3>Haaalllp</h3>
+                <ul>
+                  <li><a href="#">Link1</a></li><br>
+                  <li><a href="#">Link2</a></li><br>
+                  <li><a href="#">Link3</a></li><br>
+                  <li><a href="#">Link4</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-5 col-sm-12 footer-links">
+                <h3>Contact</h3>
+                Labster-Chem <br>
+                Holy Angel University <br>
+                Sto. Rosario St. Angeles City <br><br>
+                Follow us <br>
+                <div class="col-lg-12 col-md-12 col-sm-12 social-media">
+                  <a class="col-lg-2 col-md-2 col-sm-2 fa fa-2x fa-facebook" href="#"></a>
+                  <a class="col-lg-2 col-md-2 col-sm-2 fa fa-2x fa-twitter" href="#"></a>
+                  <a class="col-lg-2 col-md-2 col-sm-2 fa fa-2x fa-instagram" href="#"></a>
+                  <a class="col-lg-2 col-md-2 col-sm-2 fa fa-2x fa-linkedin" href="#"></a>
+                  <a class="col-lg-2 col-md-2 col-sm-2 fa fa-2x fa-google-plus" href="#"></a><br>
+                </div><br><br>
+                EULA | Privacy  |  © 2017 The Labster-Chem
+              </div>
+        </div>
+        <!-- END OF FOOTER -->
+        <!-- SIGN IN/SIGN UP -->
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	    <div class="modal-dialog">
+			     <div class="modal-content">
+				    <div class="modal-header" align="center">
+					   <img class="img-circle" id="img_logo" src="" alt="Logo ni Chemistry">
+					   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						   <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					   </button>
+			     </div>
+
+        <!-- Begin # DIV Form -->
+        <div id="div-forms">
+            <!-- Begin # Login Form -->
+            <form id="login-form">
+  		          <div class="modal-body">
+                    <div id="div-login-msg">
+                        <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                        <span id="text-login-msg">Type your username and password.</span>
+                    </div>
+  				    		  <input id="login_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect bessy)" required>
+  				    		  <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Remember me
+                      </label>
+                    </div>
+                </div>
+  				          <div class="modal-footer">
+                    <div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                    </div>
+				    	      <div>
+                          <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                          <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                        </div>
+				              </div>
+                    </form>
+                    <!-- End # Login Form -->
+
+                    <!-- Begin | Lost Password Form -->
+                    <form id="lost-form" style="display:none;">
+    	    		        <div class="modal-body">
+                        <div id="div-lost-msg">
+                          <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                            <span id="text-lost-msg">Type your e-mail.</span>
+                        </div>
+		    				        <input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
+            			   </div>
+		    		         <div class="modal-footer">
+                       <div>
+                         <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                       </div>
+                       <div>
+                         <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                         <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                       </div>
+		    		         </div>
+                    </form>
+                    <!-- End | Lost Password Form -->
+
+                    <!-- Begin | Register Form -->
+                    <form id="register-form" style="display:none;">
+            		      <div class="modal-body">
+		    				        <div id="div-register-msg">
+                          <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                            <span id="text-register-msg">Register an account.</span>
+                        </div>
+                        <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                        <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+                        <input id="register_school_code" class="form-control" type="password" placeholder="School Code" required>
+            			    </div>
+		    		          <div class="modal-footer">
+                        <div>
+                          <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                        </div>
+                        <div>
+                          <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                          <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                        </div>
+		    		          </div>
+                    </form>
+                    <!-- End | Register Form -->
+                </div>
+                <!-- End # DIV Form -->
+  			    </div>
+  		    </div>
+        </div>
+        <!-- END OF SIGN IN/SIGN UP -->
+
+      <!--END of ROW-->
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

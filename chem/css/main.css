@@ -22,7 +22,7 @@ body {
   background: transparent !important; }
 
 .navbar-default .navbar-nav {
-  font-size: 110%;
+  font-size: 100%;
   font-weight: 600; }
 
 .navbar-default .navbar-nav a:hover {
@@ -66,7 +66,7 @@ body {
 
 .home {
   height: 100vh;
-  background: #d3d3d3 url("../assets/img/smoke2.jpg") no-repeat center center;
+  background: #d3d3d3 url("../assets/img/smoke3.jpg") no-repeat center center;
   background-size: cover; }
   .home .head-text {
     position: relative;
@@ -82,7 +82,8 @@ body {
       font-weight: 800;
       font-size: 300%; }
     .home .head-text p {
-      font-family: "Lato"; }
+      font-family: "Open Sans";
+      font-weight: 400; }
     .home .head-text .join {
       font-family: "Open Sans";
       font-weight: 600;
@@ -92,7 +93,7 @@ body {
       text-decoration: none;
       background: #fff;
       color: #202020;
-      transition: .5s; }
+      transition: 1s; }
   @media (max-width: 715px) {
     .home .head-text {
       top: 40%;
@@ -106,45 +107,40 @@ body {
   .home {
     height: 600px; } }
 
-.about h2 {
-  font-family: "Open Sans";
-  font-weight: 800; }
-
-.about .title {
-  margin: 8% 0% 2%;
-  text-align: center; }
-
-.about .about-left-panel,
-.about .about-right-panel {
-  font-family: "Lato";
-  font-size: 19px; }
-
-.about .about-right-panel {
-  padding: 4%; }
-
-.about .about-left-panel {
-  padding: 10%;
-  text-align: center; }
-
-.about .gif {
-  background: #d3d3d3 url("../assets/img/chem-lab.jpg") no-repeat center center;
-  width: 80vh;
-  height: 70vh; }
-
-@media (max-width: 766px) {
+.about {
+  padding: 5% 10%; }
+  .about h2 {
+    font-family: "Open Sans";
+    font-weight: 800; }
   .about .title {
-    font-size: 25px; }
+    margin: 8% 0% 2%;
+    text-align: center; }
+  .about .about-left-panel,
+  .about .about-right-panel {
+    font-family: "Lato";
+    font-size: 19px; }
+  .about .about-right-panel {
+    padding: 4%; }
   .about .about-left-panel {
-    font-size: 17px; }
+    padding: 15% 5%;
+    text-align: center; }
   .about .gif {
-    width: auto; } }
-
-@media (max-width: 988px) {
-  .about .gif {
-    width: auto; } }
+    background: #d3d3d3 url("../assets/img/chem-lab.jpg") no-repeat center center;
+    width: 80vh;
+    height: 70vh; }
+  @media (max-width: 766px) {
+    .about .title {
+      font-size: 25px; }
+    .about .about-left-panel {
+      font-size: 17px; }
+    .about .gif {
+      width: auto; } }
+  @media (max-width: 988px) {
+    .about .gif {
+      width: auto; } }
 
 .features {
-  padding: 5% 0 10%;
+  padding: 8% 0 10%;
   background: #a9e4f7;
   background: -moz-linear-gradient(top, #a9e4f7 4%, #0fb4e7 100%);
   background: -webkit-linear-gradient(top, #a9e4f7 4%, #0fb4e7 100%);
@@ -162,7 +158,7 @@ body {
     .features .three-icons .simulation,
     .features .three-icons .video {
       margin-top: 5%;
-      margin-bottom: 8%;
+      margin-bottom: 15%;
       opacity: .85; }
       .features .three-icons .book div,
       .features .three-icons .simulation div,
@@ -190,7 +186,7 @@ body {
           left: 50%;
           top: -2%;
           transform: translate(-50%, -50%);
-          padding: 10px 16px;
+          padding: 10px;
           border: 1px solid #2098d1;
           border-radius: 1000px;
           background: #2098d1;
@@ -199,8 +195,8 @@ body {
 
 .lessons .lesson-pane {
   position: relative;
-  top: -15%;
-  transform: translateY(-15%);
+  top: -25px;
+  transform: translateY(-25px);
   padding: 5% 5% 8%;
   box-shadow: 0 5px 15px #888889;
   background: #fff;
@@ -214,10 +210,80 @@ body {
   .lessons .lesson-pane .grade8,
   .lessons .lesson-pane .grade9,
   .lessons .lesson-pane .grade10 {
-    padding: 2%; }
+    padding: 2% 5%; }
     .lessons .lesson-pane .grade7 h3,
     .lessons .lesson-pane .grade8 h3,
     .lessons .lesson-pane .grade9 h3,
     .lessons .lesson-pane .grade10 h3 {
       font-family: "Open Sans";
       font-weight: 700; }
+
+#bridge {
+  background-color: #13192d;
+  color: #fff;
+  padding: 2%;
+  text-align: center; }
+  #bridge input[type=text] {
+    width: 65%;
+    color: #202020;
+    padding: 2%; }
+
+#footer {
+  background-color: #0f1424;
+  color: #fff; }
+  #footer .footer-links {
+    padding: 2%;
+    margin: 1% 0%; }
+    #footer .footer-links ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+    #footer .footer-links li a {
+      color: #fff;
+      text-align: left; }
+  #footer .social-media {
+    text-align: left;
+    font-family: Lato, sans-serif;
+    margin: 3% 0; }
+    #footer .social-media a {
+      color: gray;
+      text-decoration: none; }
+    #footer .social-media a:hover {
+      color: #fff; }
+
+/*****************    INFO     **********************/
+.addinfo {
+  padding: 2% 5%;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 15px #eee; }
+  .addinfo h2,
+  .addinfo h4 {
+    font-family: "Open Sans"; }
+  .addinfo h2 {
+    font-weight: 800; }
+  .addinfo h4 {
+    font-weight: 700; }
+  .addinfo p {
+    font-family: lato; }
+  .addinfo input {
+    font-family: "Open Sans";
+    font-weight: 600;
+    width: 80%;
+    padding: 2%;
+    border: 2px solid #eee;
+    border-radius: 6px; }
+  .addinfo select {
+    padding: 1%;
+    border-radius: 5px;
+    border: 2px solid #eee; }
+  .addinfo .btninfo {
+    font-family: "Open Sans";
+    font-weight: 700; }
+  .addinfo .btninfo:hover {
+    border-color: #2098d1;
+    transition: .5s; }
+
+/******************   END OF INFO    *********************/
+.footer-links:nth-child(4) {
+  margin-left: 4% !important; }

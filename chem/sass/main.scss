@@ -31,7 +31,7 @@ body { overflow-x: hidden; }
   .navbar-toggle:hover { background: $transparent!important; }
 
   .navbar-nav {
-    font-size: 110%;
+    font-size: 100%;
     font-weight: 600;
   }
 
@@ -84,7 +84,7 @@ body { overflow-x: hidden; }
 
 .home {
   height: 100vh;
-  background: #d3d3d3 url('../assets/img/smoke2.jpg') no-repeat center center;
+  background: #d3d3d3 url('../assets/img/smoke3.jpg') no-repeat center center;
   background-size: cover;
 
   .head-text {
@@ -103,7 +103,10 @@ body { overflow-x: hidden; }
       font-size: 300%;
     }
 
-    p { font-family: $font2; }
+    p {
+      font-family: $font1;
+      font-weight: 400;
+    }
 
     .join {
       font-family: $font1;
@@ -116,7 +119,7 @@ body { overflow-x: hidden; }
       text-decoration: none;
       background: $white;
       color: $black;
-      transition: .5s;
+      transition: 1s;
     }
   }
 
@@ -138,6 +141,7 @@ body { overflow-x: hidden; }
 }
 
 .about {
+  padding: 5% 10%;
 
   h2 {
     font-family: $font1;
@@ -154,13 +158,12 @@ body { overflow-x: hidden; }
   .about-right-panel {
     font-family: $font2;
     font-size: 19px;
-
   }
 
   .about-right-panel { padding: 4%; }
 
   .about-left-panel {
-    padding: 10%;
+    padding: 15% 5%;
     text-align: center;
   }
 
@@ -182,7 +185,7 @@ body { overflow-x: hidden; }
 }
 
 .features {
-  padding: 5% 0 10%;
+  padding: 8% 0 10%;
   background: #a9e4f7;
   background: -moz-linear-gradient(top, #a9e4f7 4%, #0fb4e7 100%);
   background: -webkit-linear-gradient(top, #a9e4f7 4%,#0fb4e7 100%);
@@ -204,7 +207,7 @@ body { overflow-x: hidden; }
     .simulation,
     .video {
       margin-top: 5%;
-      margin-bottom: 8%;
+      margin-bottom: 15%;
       opacity: .85;
 
       div {
@@ -230,7 +233,7 @@ body { overflow-x: hidden; }
           left: 50%;
           top: -2%;
           transform: translate(-50%,-50%);
-          padding: 10px 16px;
+          padding: 10px;
           border: 1px solid $blue;
           border-radius: 1000px;
           background: $blue;
@@ -246,8 +249,8 @@ body { overflow-x: hidden; }
 
   .lesson-pane {
     position: relative;
-    top: -15%;
-    transform: translateY(-15%);
+    top: -25px;
+    transform: translateY(-25px);
     padding: 5% 5% 8%;
     box-shadow: 0 5px 15px #888889;
     background: $white;
@@ -264,7 +267,7 @@ body { overflow-x: hidden; }
     .grade8,
     .grade9,
     .grade10 {
-      padding: 2%;
+      padding: 2% 5%;
 
       h3 {
         font-family: $font1;
@@ -273,3 +276,100 @@ body { overflow-x: hidden; }
     }
   }
 }
+
+#bridge {
+    background-color: #13192d;
+    color:$white;
+    padding: 2%;
+    text-align: center;
+
+    input[type=text] {
+      width: 65%;
+      color: $black;
+      padding: 2%;
+    }
+
+    input[type=button] {
+
+    }
+}
+#footer {
+  background-color: #0f1424;
+  color: $white;
+
+  .footer-links {
+    padding: 2%;
+    margin: 1% 0%;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding:0;
+    }
+
+    li a {
+      color: $white;
+      text-align: left;
+    }
+  }
+
+  .social-media {
+    text-align: left;
+    font-family: Lato, sans-serif;
+    margin: 3% 0;
+
+    a {
+      color: gray;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $white;
+    }
+  }
+}
+
+/*****************    INFO     **********************/
+.addinfo {
+  padding: 2% 5%;
+  background: $white;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 15px $gray;
+
+  h2,
+  h4 { font-family: $font1; }
+
+  h2 { font-weight: 800 }
+
+  h4 { font-weight: 700 }
+
+  p { font-family: lato; }
+
+  input {
+    font-family: $font1;
+    font-weight: 600;
+    width: 80%;
+    padding: 2%;
+    border: 2px solid $gray;
+    border-radius: 6px;
+  }
+
+  select {
+    padding: 1%;
+    border-radius: 5px;
+    border: 2px solid $gray;
+  }
+
+  .btninfo {
+    font-family: $font1;
+    font-weight: 700;
+  }
+
+  .btninfo:hover {
+    border-color: $blue;
+    transition: .5s;
+  }
+}
+/******************   END OF INFO    *********************/
+
+.footer-links:nth-child(4)  { margin-left: 4%!important; }
