@@ -8,16 +8,15 @@ $(document).ready(function(){
   });
 
   AOS.init({
-    duration: 1500,
+    duration: 1400,
   });
 
-  /********************SMOOTH SCROLL**********************/
   $(function() {
       $(document).on('click', 'a', function(event) {
           var $anchor = $(this);
           $('html, body').stop().animate({
               scrollTop: $($anchor.attr('href')).offset().top
-          }, 1600, 'easeInOutExpo');
+          }, 1500, 'easeInOutExpo');
           event.preventDefault();
       });
   });

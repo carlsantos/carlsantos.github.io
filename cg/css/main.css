@@ -1,0 +1,111 @@
+body {
+  overflow-x: hidden; }
+
+.no-mbp {
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important; }
+
+.navbar-default .navbar-nav {
+  font-family: "Open Sans"; }
+
+.navbar-default .navbar-toggle {
+  background: #fff !important;
+  border-color: #fff !important; }
+
+.navbar-default .navbar-toggle:hover {
+  background: transparent !important; }
+
+.navbar-default .navbar-nav {
+  font-size: 95%;
+  font-weight: 600; }
+
+.navbar-default .navbar-nav a:hover {
+  color: #2098d1 !important; }
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-collapse {
+    background: #fff; } }
+
+.navbar {
+  background: transparent;
+  border: transparent;
+  transition: .8s; }
+  .navbar .navbar-brand img {
+    position: absolute;
+    top: 0;
+    transition: .5s;
+    width: 50px; }
+  .navbar .navbar-nav li a {
+    color: #fff !important; }
+  @media (max-width: 767px) {
+    .navbar .navbar-nav li a {
+      color: #202020 !important; } }
+  .navbar .navbar-nav .active a,
+  .navbar .navbar-nav .active a:focus {
+    color: #2098d1 !important;
+    background-color: transparent !important; }
+
+.navbar2 {
+  background: #fff;
+  border-bottom: 2px solid #eee;
+  transition: .5s; }
+  .navbar2 .navbar-brand img {
+    position: absolute;
+    top: 5px;
+    transition: .8s;
+    width: 40px; }
+  .navbar2 .navbar-nav li a {
+    color: #202020 !important; }
+  .navbar2 .navbar-nav .active a,
+  .navbar2 .navbar-nav .active a:focus {
+    color: #2098d1 !important; }
+  .navbar2 .navbar-nav a:hover,
+  .navbar2 .navbar-nav .active a:hover {
+    color: #fff !important;
+    background-color: #2098d1 !important; }
+
+.home {
+  position: relative;
+  height: 100vh;
+  background: url(../assets/img/galaxy.jpg) no-repeat center center;
+  background-size: cover; }
+  .home .head-text {
+    position: absolute;
+    top: 25%;
+    padding: 2%; }
+    .home .head-text h1,
+    .home .head-text h3 {
+      font-family: "Open Sans";
+      color: #fff; }
+    .home .head-text h1 {
+      font-weight: 700; }
+    .home .head-text h3 {
+      font-weight: 600; }
+
+.home:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20vh;
+  content: '';
+  background: #fff;
+  background-size: cover;
+  transform-origin: right;
+  transform: skewY(-5deg);
+  z-index: 1; }
+
+.about {
+  padding: 6%;
+  z-index: 2; }
+  .about .about-left {
+    padding: 4%; }
+    .about .about-left h2,
+    .about .about-left p {
+      font-family: "Open Sans"; }
+    .about .about-left h2 {
+      font-weight: 800; }
+    .about .about-left p {
+      font-size: 110%;
+      font-weight: 300; }
