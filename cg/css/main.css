@@ -67,37 +67,40 @@ body {
 
 .home {
   position: relative;
-  height: 100vh;
+  height: 120vh;
   background: url(../assets/img/galaxy.jpg) no-repeat center center;
   background-size: cover; }
   .home .head-text {
-    position: absolute;
-    top: 25%;
-    padding: 2%; }
+    position: relative;
+    top: 28%;
+    margin: auto; }
     .home .head-text h1,
     .home .head-text h3 {
       font-family: "Open Sans";
       color: #fff; }
     .home .head-text h1 {
-      font-weight: 700; }
-    .home .head-text h3 {
       font-weight: 600; }
+    .home .head-text h3 {
+      font-weight: 400; }
+
+@media (max-height: 690px) {
+  .home {
+    height: 690px; } }
 
 .home:after {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 20vh;
+  height: 135px;
   content: '';
   background: #fff;
-  background-size: cover;
   transform-origin: right;
   transform: skewY(-5deg);
   z-index: 1; }
 
 .about {
-  padding: 6%;
+  padding: 10% 6% 15%;
   z-index: 2; }
   .about .about-left {
     padding: 4%; }
@@ -107,5 +110,46 @@ body {
     .about .about-left h2 {
       font-weight: 800; }
     .about .about-left p {
-      font-size: 110%;
+      font-size: 115%;
       font-weight: 300; }
+
+.learn {
+  padding: 10% 3%;
+  background: #267794;
+  z-index: 1; }
+  .learn h2,
+  .learn h4 {
+    font: "Open Sans"; }
+  .learn h2 {
+    font-weight: 800;
+    color: #fff; }
+  .learn h4 {
+    font-weight: 600;
+    color: #202020; }
+  .learn .learn-icons {
+    padding: 3% 0 !important; }
+    .learn .learn-icons .icons {
+      margin-top: 5%;
+      margin-bottom: 5%;
+      padding: 6% 3%;
+      background-color: #fff;
+      box-shadow: 8px 8px #f2785e; }
+      .learn .learn-icons .icons img {
+        margin: 5% auto; }
+
+.learn:before {
+  position: absolute;
+  top: -15%;
+  left: 0;
+  right: 0;
+  height: 125px;
+  content: '';
+  background: #fff;
+  transform-origin: top right;
+  transform: skewY(-4deg);
+  z-index: -1; }
+
+@media (max-width: 992px) {
+  .learn:before {
+    height: 100px;
+    top: -100px; } }

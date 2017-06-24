@@ -2,9 +2,10 @@ $white: #fff;
 $black: #202020;
 $blue: #2098d1;
 $gray: #eee;
+$cgblue: #267794;
+$orange: #f2785e;
 $transparent: transparent;
 $font1: 'Open Sans';
-$font2: 'Lato';
 
 body { overflow-x: hidden; }
 
@@ -93,14 +94,14 @@ body { overflow-x: hidden; }
 
 .home {
   position: relative;
-  height: 100vh;
+  height: 120vh;
   background: url(../assets/img/galaxy.jpg) no-repeat center center;
   background-size: cover;
 
   .head-text {
-    position: absolute;
-    top: 25%;
-    padding: 2%;
+    position: relative;
+    top: 28%;
+    margin: auto;
 
     h1,
     h3 {
@@ -108,10 +109,14 @@ body { overflow-x: hidden; }
       color: $white;
     }
 
-    h1 { font-weight: 700 }
+    h1 { font-weight: 600; }
 
-    h3 { font-weight: 600 }
+    h3 { font-weight: 400; }
   }
+}
+
+@media(max-height: 690px) {
+  .home { height: 690px }
 }
 
 .home:after {
@@ -119,17 +124,16 @@ body { overflow-x: hidden; }
   bottom: 0;
   left: 0;
   right: 0;
-  height: 20vh;
+  height: 135px;
   content: '';
   background: $white;
-  background-size: cover;
   transform-origin: right;
   transform: skewY(-5deg);
   z-index: 1;
 }
 
 .about {
-  padding: 6%;
+  padding: 10% 6% 15%;
   z-index: 2;
 
   .about-left {
@@ -141,8 +145,66 @@ body { overflow-x: hidden; }
     h2 { font-weight: 800; }
 
     p {
-      font-size: 110%;
+      font-size: 115%;
       font-weight: 300;
     }
+  }
+
+  .about-right {
+
+  }
+}
+
+.learn {
+  padding: 10% 3%;
+  background: $cgblue;
+  z-index: 1;
+
+  h2,
+  h4 { font: $font1; }
+
+  h2 {
+    font-weight: 800;
+    color: $white;
+  }
+
+  h4 {
+    font-weight: 600;
+    color: $black;
+  }
+
+  .learn-icons {
+    padding: 3% 0!important;
+
+    .icons {
+      margin-top: 5%;
+      margin-bottom: 5%;
+      padding: 6% 3%;
+      background-color: $white;
+      box-shadow: 8px 8px $orange;
+
+      img { margin: 5% auto; }
+    }
+
+  }
+}
+
+.learn:before {
+  position: absolute;
+  top: -15%;
+  left: 0;
+  right: 0;
+  height: 125px;
+  content: '';
+  background: $white;
+  transform-origin: top right;
+  transform: skewY(-4deg);
+  z-index: -1;
+}
+
+@media(max-width: 992px) {
+  .learn:before {
+    height: 100px;
+    top: -100px;
   }
 }
