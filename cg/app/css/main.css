@@ -1,0 +1,198 @@
+body {
+  overflow-x: hidden; }
+
+.navbar-default .navbar-nav {
+  font-family: "Open Sans"; }
+
+.navbar-default .navbar-toggle {
+  background: #fff !important;
+  border-color: #fff !important; }
+
+.navbar-default .navbar-toggle:hover {
+  background: transparent !important; }
+
+.navbar-default .navbar-nav {
+  font-size: 95%;
+  font-weight: 600; }
+
+.navbar-default .navbar-nav a:hover {
+  color: #2098d1 !important; }
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-collapse {
+    background: #fff; } }
+
+.navbar {
+  background: transparent;
+  border: transparent;
+  transition: .8s; }
+  .navbar .navbar-brand img {
+    position: absolute;
+    top: 0;
+    transition: .5s;
+    width: 50px; }
+  .navbar .navbar-nav li a {
+    color: #fff !important; }
+  @media (max-width: 767px) {
+    .navbar .navbar-nav li a {
+      color: #202020 !important; } }
+  .navbar .navbar-nav .active a,
+  .navbar .navbar-nav .active a:focus {
+    color: #2098d1 !important;
+    background-color: transparent !important; }
+
+.navbar2 {
+  background: #fff;
+  border-bottom: 2px solid #eee;
+  transition: .5s; }
+  .navbar2 .navbar-brand img {
+    position: absolute;
+    top: 5px;
+    transition: .8s;
+    width: 40px; }
+  .navbar2 .navbar-nav li a {
+    color: #202020 !important; }
+  .navbar2 .navbar-nav .active a,
+  .navbar2 .navbar-nav .active a:focus {
+    color: #2098d1 !important; }
+  .navbar2 .navbar-nav a:hover,
+  .navbar2 .navbar-nav .active a:hover {
+    color: #fff !important;
+    background-color: #2098d1 !important; }
+
+.home {
+  position: relative;
+  height: 120vh;
+  background: url(../assets/img/galaxy.jpg) no-repeat center center;
+  background-size: cover;
+  border-radius: 0 !important; }
+  .home .head-text {
+    position: relative;
+    top: 28%;
+    margin: auto; }
+    .home .head-text h1,
+    .home .head-text h3 {
+      font-family: "Open Sans";
+      color: #fff; }
+    .home .head-text h1 {
+      font-weight: 600; }
+    .home .head-text h3 {
+      font-weight: 400; }
+
+@media (max-height: 690px) {
+  .home {
+    height: 690px; } }
+
+.home:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20vh;
+  content: '';
+  background: #fff;
+  transform-origin: right;
+  transform: skewY(-5deg);
+  z-index: 1; }
+
+.about {
+  padding: 10% 6% 15%;
+  z-index: 2; }
+  .about .about-left {
+    padding: 4%; }
+    .about .about-left h2,
+    .about .about-left p {
+      font-family: "Open Sans"; }
+    .about .about-left h2 {
+      font-weight: 800; }
+    .about .about-left p {
+      font-size: 115%;
+      font-weight: 300; }
+  .about .about-right img {
+    margin: auto; }
+
+.learn {
+  padding: 10% 3% 5%;
+  background: #267794;
+  z-index: 1; }
+  .learn h2,
+  .learn h4 {
+    font: "Open Sans"; }
+  .learn h2 {
+    font-weight: 800;
+    color: #fff; }
+  .learn h4 {
+    font-weight: 600;
+    color: #202020; }
+  .learn .learn-icons {
+    padding: 3% 0 !important; }
+    .learn .learn-icons .icons {
+      margin-top: 5%;
+      margin-bottom: 5%;
+      padding: 6% 3%;
+      background-color: #fff;
+      box-shadow: 0 5px 20px #202020; }
+      .learn .learn-icons .icons img {
+        margin: 5% auto; }
+
+.learn:before {
+  position: absolute;
+  top: -15%;
+  left: 0;
+  right: 0;
+  height: 20vh;
+  content: '';
+  background: #fff;
+  transform-origin: top right;
+  transform: skewY(-4deg);
+  z-index: -1; }
+
+@media (max-width: 992px) {
+  .learn:before {
+    height: 100px;
+    top: -100px; } }
+
+.team {
+  height: 700px;
+  margin: 0 !important;
+  background: #202020 url(../assets/img/code-geeks-officers.jpg) no-repeat center;
+  background-size: cover;
+  border-radius: 0 !important; }
+  .team h2 {
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 280%;
+    color: #fff;
+    margin-top: 5%; }
+
+.card {
+  margin: 0 !important;
+  padding: 3%;
+  background: #eee; }
+  .card h2 {
+    font-family: "Open Sans";
+    font-weight: 800;
+    color: #202020;
+    margin-top: 5%; }
+    .card h2 span {
+      color: #267794; }
+  .card .card-left {
+    padding: 5% 3%; }
+    .card .card-left img {
+      margin: auto; }
+  .card .card-right {
+    padding: 5% 10%; }
+    .card .card-right p,
+    .card .card-right ol li {
+      font-family: "Open Sans";
+      font-weight: 600;
+      font-size: 120%; }
+
+footer {
+  margin: 0 !important;
+  padding: 0 !important;
+  border-top: 1px solid #eee; }
+  footer p {
+    font-family: "Open Sans";
+    font-weight: 300;
+    padding: 1%; }
