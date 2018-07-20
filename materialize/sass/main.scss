@@ -1,0 +1,33 @@
+html {
+  background: #424242;
+}
+
+.info {
+  position: relative;
+  top: 120px;
+  height: 70vh;
+  opacity: .7;
+  border-radius: 2%;
+
+  img {
+    position: relative;
+    top: 115px;
+  }
+
+  h4 {
+    position: relative;
+    top: 120px;
+    font-family: lato;
+  }
+
+  p {
+    position: relative;
+    top: 120px;
+    font-family: lato;
+  }
+
+  .links {
+    position: relative;
+    top: 130px;
+  }
+}
