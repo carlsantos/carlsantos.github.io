@@ -2,32 +2,33 @@ html {
   background: #424242;
 }
 
-.info {
-  position: relative;
-  top: 120px;
-  height: 70vh;
-  opacity: .7;
-  border-radius: 2%;
+.container {
+  display: flex;
+  align-items: center;
+  padding: 1.5em 0!important;
+  min-height: 95vh!important;
+  max-height: 98vh!important;
+}
 
-  img {
-    position: relative;
-    top: 115px;
-  }
+.info {
+  align-self: center;
+  padding-top: 2%!important;
+  padding-bottom: 3%!important;
+  border-radius: 1%;
+  opacity: .9;
 
   h4 {
-    position: relative;
-    top: 120px;
-    font-family: lato;
+    font-size: 1.8em;
   }
 
-  p {
-    position: relative;
-    top: 120px;
+  h4, p {
     font-family: lato;
   }
 
   .links {
-    position: relative;
-    top: 130px;
+    padding: 1%;
+    a {
+      margin: 2%;
+    }
   }
 }
