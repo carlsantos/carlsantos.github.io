@@ -1,36 +1,47 @@
 <!DOCTYPE html>
-<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Carl Santos</title>
+    <title>Carl Santos | Web Developer</title>
     <link rel="stylesheet" href="materialize/css/materialize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
   </head>
   <body>
     <div class="row">
-      <div class="wrap">
-        <div class="info col s10 m6 l4 offset-s1 offset-m4 offset-l4 center white z-depth-5">
-          <img class="circle" src="assets/img/carlsantos.jpg" width="200" alt="Carl Santos">
-          <h4 class="">CARL JOSEPH SANTOS</h4>
-          <p class="">WEB DEVELOPER</p>
-          <p class="">This portfolio is still work in progress and soon I will show my works.</p>
-          <div class="links">
-            <a class="tooltipped grey-text" href="#" data-position="top" data-tooltip="cjassantos@gmail.com"><i class="small material-icons">email</i></a>
-            <a class="tooltipped grey-text" href="https://github.com/carlsantos" data-position="bottom" data-tooltip="Link to my GitHub" target="_blank"><i class="small material-icons">link</i></a>
-            <a class="tooltipped grey-text" href="#" data-position="bottom" data-tooltip="714-749-5111"><i class="small material-icons">phone</i></a>
-          </div>
-        </div>
+      <!--  NAV  -->
+      <div class="z-depth-0 white col s12 header">
+        <a class="sidenav-trigger right" data-target="slide-out" href="#">ABOUT</a>
       </div>
+    </div>
+    <!--   SIDENAV   -->
+
+    <div class="row">
+      <ul class="sidenav grey darken-3 col s10 m5 l3" id="slide-out">
+        <div class="sidenav--content center">
+          <li><img class="circle" src="https://help.github.com/assets/images/help/profile/identicon.png" alt="Carl Santos" width="150"></li>
+          <li><h1 class="white-text">CARL SANTOS</h1></li>
+          <li><p class="grey-text">Web Developer</p></li>
+          <li><p class="white-text">Still a work in progress</p></li>
+          <li>
+            <div class="social--links">
+              <a class="tooltipped" data-position="top" data-tooltip="cjassantos@gmail.com"  href="#"><i class="small material-icons white-text">email</i></a>
+              <a class="tooltipped" data-position="bottom" data-tooltip="Link to my GitHub" href="https://github.com/carlsantos" target="_blank"><i class="small material-icons white-text">link</i></a>
+              <a class="tooltipped" data-position="bottom" data-tooltip="714-749-5111" href="#" ><i class="small material-icons white-text">phone</i></a>
+              <p class="grey-text">(c) 2018 | Carl Santos</p>
+            </div>
+          </li>
+        </div>
+      </ul>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="materialize/js/bin/materialize.min.js"></script>
     <script>
-      $(document).ready(function(){
-        $('.tooltipped').tooltip();
-      });
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.tooltipped').tooltip();
+    });
     </script>
   </body>
 </html>
