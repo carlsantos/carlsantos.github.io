@@ -10,7 +10,7 @@
   <body>
     <div class="row">
       <!--  NAV  -->
-      <div class="z-depth-0 white col s12 header">
+      <div class="white col s12 header">
         <a class="sidenav-trigger right" data-target="slide-out" href="#">ABOUT</a>
       </div>
     </div>
@@ -22,7 +22,7 @@
           <li><img class="circle" src="https://help.github.com/assets/images/help/profile/identicon.png" alt="Carl Santos" width="150"></li>
           <li><h1 class="white-text">CARL SANTOS</h1></li>
           <li><p class="grey-text">Web Developer</p></li>
-          <li><p class="white-text">Still a work in progress</p></li>
+          <li><p class="white-text">Still in progress</p></li>
           <li>
             <div class="social--links">
               <a class="tooltipped" data-position="top" data-tooltip="cjassantos@gmail.com"  href="#"><i class="small material-icons white-text">email</i></a>
@@ -35,12 +35,65 @@
       </ul>
     </div>
 
+    <!--   CONTAINER    -->
+    <div class="row">
+      <div class="container">
+        <h2 class="col s12"><blockquote>WORKS</blockquote></h2><br>
+        <div class="col s12 l6">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="https://www.thoughtco.com/thmb/F5h23wHRy9ymdCWAO3czB92aIgE=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/PHP-code-58d2d5803df78c51623a6ce2.jpg" alt="">
+              <span class="card-title">The HydroChem</span>
+            </div>
+            <div class="card-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="card-action">
+              <div class="chip">HTML</div>
+              <div class="chip">CSS</div>
+              <div class="chip">JAVASCRIPT</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 l6">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="https://www.thoughtco.com/thmb/F5h23wHRy9ymdCWAO3czB92aIgE=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/PHP-code-58d2d5803df78c51623a6ce2.jpg" alt="">
+              <span class="card-title">The HydroChem</span>
+            </div>
+            <div class="card-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="card-action">
+              <div class="chip">HTML</div>
+              <div class="chip">CSS</div>
+              <div class="chip">JAVASCRIPT</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="materialize/js/bin/materialize.min.js"></script>
     <script>
     $(document).ready(function(){
       $('.sidenav').sidenav();
       $('.tooltipped').tooltip();
+
+    });
+
+    $(window).scroll(function (){
+      var top = $(window).scrollTop();
+
+      if (top >= 50) {
+        $('.header').addClass('z-depth-1');
+      } else {
+        $('.header').removeClass('z-depth-1');
+      }
+
     });
     </script>
   </body>

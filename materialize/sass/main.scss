@@ -1,5 +1,27 @@
 .header {
+  position: fixed;
   padding: 16px 2%!important;
+  width: 100vw;
+  transition: .5s;
+  z-index: 999;
+
+  @media #{$large-and-up} {
+    .sidenav-trigger {
+      font-size: 1.2em;
+    }
+  }
+
+  @media #{$medium-and-down} {
+    .sidenav-trigger {
+      font-size: 2vw;
+    }
+  }
+
+  @media #{$small-and-down} {
+    .sidenav-trigger {
+      font-size: 2.8vw;
+    }
+  }
 
   .sidenav-trigger {
     padding: 5px 25px!important;
@@ -7,17 +29,16 @@
     border-radius: 10px;
     background-color: transparent;
     color: #f44336;
-    font-size: 1.2em;
     cursor: grab;
     transition: .5s;
     }
 
   .sidenav-trigger:hover {
-    transition: .5s;
     background-color: #f44336;
-    color: #fff;
     box-shadow: 0 5px 5px #eee;
+    color: #fff;
     cursor: grab;
+    transition: .5s;
   }
 }
 
@@ -26,19 +47,14 @@
 
   .sidenav--content {
     position: absolute;
-    width: 90%;
-    height: 500px;
-    margin: auto;
-    bottom: 0;
     top: 0;
-    left: 0;
     right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 90%;
+    height: 450px;
     li {
-
-      h1, p {
-        margin-top: 1%!important;
-        margin-bottom: 0!important;
-      }
 
       @media #{$large-and-up} {
         h1 {
@@ -58,10 +74,15 @@
         }
       }
 
+      h1, p {
+        margin-top: 1%!important;
+        margin-bottom: 0!important;
+      }
+
       .social--links {
-        width: 100%;
         position: absolute;
         bottom: 0;
+        width: 100%;
         line-height: 25px;
 
         a {
@@ -72,6 +93,30 @@
           margin: 0!important;
         }
       }
+    }
+  }
+}
+
+.container {
+  height: 1200px;
+
+  h2 {
+    font-family: lato;
+  }
+
+  .card {
+    border-radius: 10px;
+
+    .card-image {
+      img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    }
+
+    .card-action {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
     }
   }
 }

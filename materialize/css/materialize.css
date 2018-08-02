@@ -8067,7 +8067,26 @@ input[type=range]::-ms-thumb {
   }
 }
 .header {
+  position: fixed;
   padding: 16px 2% !important;
+  width: 100vw;
+  transition: 0.5s;
+  z-index: 999;
+}
+@media only screen and (min-width : 993px) {
+  .header .sidenav-trigger {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (max-width : 992px) {
+  .header .sidenav-trigger {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width : 600px) {
+  .header .sidenav-trigger {
+    font-size: 2.8vw;
+  }
 }
 .header .sidenav-trigger {
   padding: 5px 25px !important;
@@ -8075,16 +8094,15 @@ input[type=range]::-ms-thumb {
   border-radius: 10px;
   background-color: transparent;
   color: #f44336;
-  font-size: 1.2em;
   cursor: grab;
   transition: 0.5s;
 }
 .header .sidenav-trigger:hover {
-  transition: 0.5s;
   background-color: #f44336;
-  color: #fff;
   box-shadow: 0 5px 5px #eee;
+  color: #fff;
   cursor: grab;
+  transition: 0.5s;
 }
 
 .sidenav {
@@ -8092,17 +8110,13 @@ input[type=range]::-ms-thumb {
 }
 .sidenav .sidenav--content {
   position: absolute;
-  width: 90%;
-  height: 500px;
-  margin: auto;
-  bottom: 0;
   top: 0;
-  left: 0;
   right: 0;
-}
-.sidenav .sidenav--content li h1, .sidenav .sidenav--content li p {
-  margin-top: 1% !important;
-  margin-bottom: 0 !important;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 90%;
+  height: 450px;
 }
 @media only screen and (min-width : 993px) {
   .sidenav .sidenav--content li h1 {
@@ -8119,10 +8133,14 @@ input[type=range]::-ms-thumb {
     font-size: 7vw;
   }
 }
+.sidenav .sidenav--content li h1, .sidenav .sidenav--content li p {
+  margin-top: 1% !important;
+  margin-bottom: 0 !important;
+}
 .sidenav .sidenav--content li .social--links {
-  width: 100%;
   position: absolute;
   bottom: 0;
+  width: 100%;
   line-height: 25px;
 }
 .sidenav .sidenav--content li .social--links a {
@@ -8130,6 +8148,24 @@ input[type=range]::-ms-thumb {
 }
 .sidenav .sidenav--content li .social--links p {
   margin: 0 !important;
+}
+
+.container {
+  height: 1200px;
+}
+.container h2 {
+  font-family: lato;
+}
+.container .card {
+  border-radius: 10px;
+}
+.container .card .card-image img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.container .card .card-action {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /*# sourceMappingURL=materialize.css.map */
