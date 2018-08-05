@@ -100,8 +100,8 @@
 .container {
   height: 1200px;
 
-  h2 {
-    font-family: lato;
+  h3 {
+    font-weight: bolder;
   }
 
   .card {
@@ -112,11 +112,33 @@
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
       }
+
+      .card-title {
+        background-color: #757575;
+        opacity: .8;
+        padding: 1.5%;
+      }
     }
 
     .card-action {
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
+    }
+  }
+
+  @media #{$extra-large-and-up} {
+    .card-image {
+      img {
+        height: 320px!important;
+      }
+    }
+  }
+
+  @media #{$large-and-up} {
+    .card-image {
+      img {
+        height: 250px!important;
+      }
     }
   }
 }

@@ -8153,8 +8153,8 @@ input[type=range]::-ms-thumb {
 .container {
   height: 1200px;
 }
-.container h2 {
-  font-family: lato;
+.container h3 {
+  font-weight: bolder;
 }
 .container .card {
   border-radius: 10px;
@@ -8163,9 +8163,24 @@ input[type=range]::-ms-thumb {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+.container .card .card-image .card-title {
+  background-color: #757575;
+  opacity: 0.8;
+  padding: 1.5%;
+}
 .container .card .card-action {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+@media only screen and (min-width : 1201px) {
+  .container .card-image img {
+    height: 320px !important;
+  }
+}
+@media only screen and (min-width : 993px) {
+  .container .card-image img {
+    height: 250px !important;
+  }
 }
 
 /*# sourceMappingURL=materialize.css.map */
