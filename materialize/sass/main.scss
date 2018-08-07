@@ -24,7 +24,7 @@
   }
 
   .sidenav-trigger {
-    padding: 5px 25px!important;
+    padding: 5px 20px!important;
     border: 2px solid #f44336;
     border-radius: 10px;
     background-color: transparent;
@@ -98,7 +98,6 @@
 }
 
 .container {
-  height: 1200px;
 
   h3 {
     font-weight: bolder;
@@ -120,17 +119,13 @@
       }
     }
 
+    .card-content {
+      color: #757575;
+    }
+
     .card-action {
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
-    }
-  }
-
-  @media #{$extra-large-and-up} {
-    .card-image {
-      img {
-        height: 320px!important;
-      }
     }
   }
 
@@ -138,6 +133,18 @@
     .card-image {
       img {
         height: 250px!important;
+      }
+    }
+
+    .card-content {
+      min-height: 110px!important;
+    }
+  }
+
+  @media #{$extra-large-and-up} {
+    .card-image {
+      img {
+        height: 350px!important;
       }
     }
   }
