@@ -8080,12 +8080,12 @@ input[type=range]::-ms-thumb {
 }
 @media only screen and (max-width : 992px) {
   .header .sidenav-trigger {
-    font-size: 2vw;
+    border: none !important;
   }
-}
-@media only screen and (max-width : 600px) {
-  .header .sidenav-trigger {
-    font-size: 2.8vw;
+  .header .sidenav-trigger:hover {
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #f44336 !important;
   }
 }
 .header .sidenav-trigger {
