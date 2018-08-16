@@ -8166,16 +8166,40 @@ input[type=range]::-ms-thumb {
   color: #000;
 }
 @media only screen and (min-width : 993px) {
-  .container .card-image img {
-    height: 250px !important;
-  }
-  .container .card-content {
-    height: 120px !important;
+  .container .card .card-action {
+    width: 100%;
+    position: absolute;
+    bottom: 0 !important;
   }
 }
-@media only screen and (min-width : 1201px) {
-  .container .card-image img {
-    height: 350px !important;
+@media only screen and (max-width: 1500px) {
+  .container .card {
+    height: 460px !important;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .container .card {
+    height: 420px !important;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .container .card {
+    height: 400px !important;
+  }
+}
+@media only screen and (max-width : 992px) {
+  .container .card {
+    height: auto !important;
+  }
+}
+@media only screen and (min-width: 1501px) {
+  .container .card {
+    height: 500px !important;
+  }
+}
+@media only screen and (min-width: 1701px) {
+  .container .card {
+    height: 530px !important;
   }
 }
 
