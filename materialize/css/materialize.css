@@ -8106,6 +8106,7 @@ input[type=range]::-ms-thumb {
 }
 
 .sidenav {
+  opacity: 0.9;
   font-family: lato;
 }
 .sidenav .sidenav--content {
