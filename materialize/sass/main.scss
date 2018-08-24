@@ -117,6 +117,12 @@
         color: #000;
       }
     }
+
+    .card-action {
+      a {
+        margin: auto!important;
+      }
+    }
   }
 
   @media #{$large-and-up} {

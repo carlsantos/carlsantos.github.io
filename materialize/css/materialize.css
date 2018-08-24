@@ -8166,6 +8166,9 @@ input[type=range]::-ms-thumb {
   font-family: Nunito;
   color: #000;
 }
+.container .card .card-action a {
+  margin: auto !important;
+}
 @media only screen and (min-width : 993px) {
   .container .card .card-action {
     width: 100%;
