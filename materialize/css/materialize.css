@@ -8067,40 +8067,22 @@ input[type=range]::-ms-thumb {
   }
 }
 .header {
+  padding: 12px 30px !important;
   position: fixed;
-  padding: 16px 2% !important;
   width: 100vw;
   transition: 0.5s;
   z-index: 999;
 }
-@media only screen and (min-width : 993px) {
-  .header .sidenav-trigger {
-    font-size: 1.2em;
-  }
-}
-@media only screen and (max-width : 992px) {
-  .header .sidenav-trigger {
-    border: none !important;
-  }
-  .header .sidenav-trigger:hover {
-    background: transparent !important;
-    box-shadow: none !important;
-    color: #f44336 !important;
-  }
-}
 .header .sidenav-trigger {
-  padding: 5px 20px !important;
-  border: 2px solid #f44336;
-  border-radius: 10px;
   background-color: transparent;
   color: #f44336;
   cursor: grab;
   transition: 0.5s;
 }
+.header .sidenav-trigger i {
+  padding-top: 3px;
+}
 .header .sidenav-trigger:hover {
-  background-color: #f44336;
-  box-shadow: 0 5px 5px #eee;
-  color: #fff;
   cursor: grab;
   transition: 0.5s;
 }
